@@ -1001,167 +1001,306 @@
     <!-- ========================
          DOBRA 6.5: WHATSAPP
     ========================= -->
-    <section class="w-full py-24 bg-preto">
-        <div class="max-w-4xl mx-auto px-6 md:px-12">
-            <div class="text-center mb-12">
+    <section class="w-full py-24 bg-preto overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 md:px-12">
+            <div class="text-center mb-14">
                 <h2 class="font-display font-bold text-[30px] md:text-4xl text-dourado mb-4">
                     O que acontece depois da compra
                 </h2>
-                <p class="text-textoSecundario text-lg leading-relaxed">
+                <p class="text-textoSecundario text-lg leading-relaxed max-w-xl mx-auto">
                     Conversas reais de clientes que aplicaram o diagnóstico e voltaram para contar.
                 </p>
             </div>
 
-            <div class="space-y-8">
+            <!-- 3 phone mockups side by side -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
 
-                <!-- Chat 1 — João S. -->
-                <div class="rounded-xl overflow-hidden shadow-2xl border border-white/5">
-                    <!-- Header do chat -->
-                    <div class="bg-[#075E54] px-4 py-3 flex items-center gap-3">
-                        <div class="flex items-center gap-2 mr-auto">
-                            <div class="w-9 h-9 rounded-full bg-[#128C7E] flex items-center justify-center text-white font-bold text-xs shrink-0">JS</div>
-                            <div>
-                                <p class="text-white font-semibold text-sm leading-tight">João Silva</p>
-                                <p class="text-white/60 text-[11px]">Cliente Alinhatta</p>
-                            </div>
-                        </div>
-                        <iconify-icon icon="logos:whatsapp-icon" class="text-xl opacity-80"></iconify-icon>
-                    </div>
-
-                    <!-- Área do chat -->
-                    <div class="wpp-bg p-4 space-y-3">
-                        <!-- Data separator -->
-                        <div class="flex justify-center">
-                            <span class="bg-black/20 text-white/60 text-[11px] px-3 py-1 rounded-full">Hoje</span>
-                        </div>
-
-                        <!-- Mensagem recebida 1 -->
-                        <div class="flex justify-start">
-                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed">Oi! Comprei o diagnóstico ontem à noite. Acabei de terminar a planilha agora de manhã 👀</p>
-                                <span class="text-[11px] text-gray-400 block text-right mt-1">08:32</span>
-                            </div>
-                        </div>
-
-                        <!-- Mensagem recebida 2 -->
-                        <div class="flex justify-start">
-                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed">Saiu Nível 2 (Em Desenvolvimento). Achei que estava pior mas o radar mostrou exatamente onde está o buraco — documentação técnica incompleta 😬</p>
-                                <span class="text-[11px] text-gray-400 block text-right mt-1">08:33</span>
-                            </div>
-                        </div>
-
-                        <!-- Mensagem enviada -->
-                        <div class="flex justify-end">
-                            <div class="wpp-bubble-sent px-4 py-2.5 max-w-[75%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed font-medium">João! Isso é exatamente o que o diagnóstico serve pra mostrar. Ótimo que identificou cedo. Use o Checklist do Bônus 01 — ele cobre tudo que você precisa regularizar primeiro. 👊</p>
-                                <div class="flex items-center justify-end gap-1 mt-1">
-                                    <span class="text-[11px] text-gray-500">08:41</span>
-                                    <iconify-icon icon="lucide:check-check" class="text-[#53bdeb] text-sm"></iconify-icon>
+                <!-- ── PHONE 1 — João Silva ── -->
+                <div class="mx-auto w-full max-w-[290px] md:max-w-none">
+                    <div class="bg-[#1c1c1e] rounded-[42px] p-[9px] shadow-[0_0_0_2px_#3a3a3c,0_25px_70px_rgba(0,0,0,0.75)]">
+                        <div class="rounded-[34px] overflow-hidden flex flex-col">
+                            <!-- Dynamic island + status -->
+                            <div class="bg-[#075E54] flex flex-col">
+                                <div class="flex justify-center pt-2 pb-0.5">
+                                    <div class="bg-[#1c1c1e] w-20 h-5 rounded-full"></div>
+                                </div>
+                                <div class="flex items-center justify-between px-4 py-0.5">
+                                    <span class="text-white text-[11px] font-semibold tracking-tight">9:41</span>
+                                    <div class="flex items-center gap-1.5">
+                                        <svg width="15" height="10" viewBox="0 0 15 10" fill="white"><rect x="0" y="6" width="2.5" height="4" rx="0.4"/><rect x="4" y="4" width="2.5" height="6" rx="0.4"/><rect x="8" y="2" width="2.5" height="8" rx="0.4"/><rect x="12" y="0" width="2.5" height="10" rx="0.4"/></svg>
+                                        <svg width="13" height="10" viewBox="0 0 18 13" fill="white"><path d="M9 3.5A8.5 8.5 0 0 1 16.5 7L18 5.5A10.5 10.5 0 0 0 9 1.5 10.5 10.5 0 0 0 0 5.5L1.5 7A8.5 8.5 0 0 1 9 3.5z"/><path d="M9 6.5A5.5 5.5 0 0 1 14.5 9.5L16 8A7.5 7.5 0 0 0 9 5 7.5 7.5 0 0 0 2 8L3.5 9.5A5.5 5.5 0 0 1 9 6.5z"/><circle cx="9" cy="12" r="1.5"/></svg>
+                                        <svg width="22" height="11" viewBox="0 0 24 12" fill="none"><rect x="0.5" y="0.5" width="20" height="11" rx="3" stroke="white" stroke-opacity="0.4"/><rect x="1.5" y="1.5" width="16" height="9" rx="2" fill="white"/><path d="M22 4v4a2 2 0 0 0 0-4z" fill="white" fill-opacity="0.45"/></svg>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Mensagem recebida 3 -->
-                        <div class="flex justify-start">
-                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed">Perfeito! Já estava olhando o checklist. Em 45 minutos deu pra fazer tudo. Valeu muito o kit, foi o melhor R$67 que gastei esse mês 🙏🏼</p>
-                                <span class="text-[11px] text-gray-400 block text-right mt-1">09:10</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chat 2 — Carla M. (vitória em pregão) -->
-                <div class="rounded-xl overflow-hidden shadow-2xl border border-white/5">
-                    <div class="bg-[#075E54] px-4 py-3 flex items-center gap-3">
-                        <div class="flex items-center gap-2 mr-auto">
-                            <div class="w-9 h-9 rounded-full bg-[#1e8855] flex items-center justify-center text-white font-bold text-xs shrink-0">CM</div>
-                            <div>
-                                <p class="text-white font-semibold text-sm leading-tight">Carla Mendes</p>
-                                <p class="text-white/60 text-[11px]">Cliente Alinhatta</p>
-                            </div>
-                        </div>
-                        <iconify-icon icon="logos:whatsapp-icon" class="text-xl opacity-80"></iconify-icon>
-                    </div>
-
-                    <div class="wpp-bg p-4 space-y-3">
-                        <div class="flex justify-center">
-                            <span class="bg-black/20 text-white/60 text-[11px] px-3 py-1 rounded-full">3 semanas atrás</span>
-                        </div>
-
-                        <div class="flex justify-start">
-                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[80%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed">GENTE! Acabamos de ganhar nossa primeira licitação 🎉🎉🎉 contrato de R$48 mil</p>
-                                <span class="text-[11px] text-gray-400 block text-right mt-1">14:07</span>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-start">
-                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[80%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed">Apliquei o plano de ação do diagnóstico à risca. O Mapa dos 10 Erros foi o que mais ajudou — vi que estava fazendo 4 deles sem saber 😅</p>
-                                <span class="text-[11px] text-gray-400 block text-right mt-1">14:09</span>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-end">
-                            <div class="wpp-bubble-sent px-4 py-2.5 max-w-[80%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed font-medium">Carla!! Que notícia incrível 🏆 Isso é resultado de diagnóstico correto + execução consistente. Parabéns pela vitória!</p>
-                                <div class="flex items-center justify-end gap-1 mt-1">
-                                    <span class="text-[11px] text-gray-500">14:22</span>
-                                    <iconify-icon icon="lucide:check-check" class="text-[#53bdeb] text-sm"></iconify-icon>
+                            <!-- WA header -->
+                            <div class="bg-[#075E54] px-3 py-2 flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="white" class="opacity-70 shrink-0"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                                <div class="w-8 h-8 rounded-full bg-[#1e7e6e] flex items-center justify-center text-white font-bold text-[10px] shrink-0 border border-white/20">JS</div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-white font-semibold text-[13px] leading-none mb-0.5">João Silva</p>
+                                    <p class="text-[#80cfc6] text-[10px] leading-none">online</p>
+                                </div>
+                                <div class="flex items-center gap-3 text-white/80">
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                    <svg width="4" height="16" viewBox="0 0 4 20" fill="currentColor"><circle cx="2" cy="2" r="2"/><circle cx="2" cy="10" r="2"/><circle cx="2" cy="18" r="2"/></svg>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chat 3 — Roberto (percepção de valor) -->
-                <div class="rounded-xl overflow-hidden shadow-2xl border border-white/5">
-                    <div class="bg-[#075E54] px-4 py-3 flex items-center gap-3">
-                        <div class="flex items-center gap-2 mr-auto">
-                            <div class="w-9 h-9 rounded-full bg-[#5b3a8c] flex items-center justify-center text-white font-bold text-xs shrink-0">RF</div>
-                            <div>
-                                <p class="text-white font-semibold text-sm leading-tight">Roberto Farias</p>
-                                <p class="text-white/60 text-[11px]">Cliente Alinhatta</p>
+                            <!-- Chat messages -->
+                            <div class="wpp-bg px-2.5 py-3 space-y-1" style="min-height:340px">
+                                <div class="flex justify-center mb-2">
+                                    <span class="bg-[#d9eaf3]/90 text-[#54656f] text-[10px] px-3 py-0.5 rounded-md shadow-sm">Hoje</span>
+                                </div>
+                                <!-- Received group (tail only on first) -->
+                                <div class="flex justify-start">
+                                    <div class="wpp-bubble-received px-3 py-1.5 max-w-[83%] shadow-sm text-[#111b21] text-[12.5px] leading-snug">
+                                        Oi! Comprei o kit ontem à noite 👀
+                                        <span class="text-[10px] text-[#8696a0] block text-right mt-0.5 -mb-0.5 ml-3">08:32</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="bg-white px-3 py-1.5 max-w-[83%] shadow-sm rounded-[10px] text-[#111b21] text-[12.5px] leading-snug">
+                                        Fiz a planilha agora de manhã — saiu Nível 2. O radar apontou: documentação técnica incompleta 😬
+                                        <span class="text-[10px] text-[#8696a0] block text-right mt-0.5 -mb-0.5 ml-3">08:33</span>
+                                    </div>
+                                </div>
+                                <!-- Sent -->
+                                <div class="flex justify-end mt-1">
+                                    <div class="wpp-bubble-sent px-3 py-1.5 max-w-[83%] shadow-sm text-[#111b21] text-[12.5px] leading-snug">
+                                        João! Exatamente pra isso serve 💪 Usa o Bônus 01 — Checklist de Hab. — cobre tudo que precisa regularizar primeiro
+                                        <div class="flex items-center justify-end gap-0.5 mt-0.5 -mb-0.5">
+                                            <span class="text-[10px] text-[#8696a0]">08:41</span>
+                                            <svg width="15" height="10" viewBox="0 0 18 12" fill="#53bdeb"><path d="M12.5 1L6 7.5 3 4.5l-1.5 1.5L6 10.5 14 2.5 12.5 1zm3.5 0l-7.5 7.5-1.5-1.5L5.5 8.5l2 2 9-9L16 1z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Voice message received -->
+                                <div class="flex justify-start mt-1">
+                                    <div class="wpp-bubble-received shadow-sm overflow-hidden" style="min-width:180px;max-width:83%">
+                                        <div class="flex items-center gap-2 px-3 py-2">
+                                            <div class="w-8 h-8 rounded-full bg-[#128C7E] flex items-center justify-center shrink-0">
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                                            </div>
+                                            <div class="flex items-end gap-px flex-1" style="height:24px">
+                                                <div class="bg-[#b0bec5] rounded-full w-[3px]" style="height:30%"></div>
+                                                <div class="bg-[#b0bec5] rounded-full w-[3px]" style="height:55%"></div>
+                                                <div class="bg-[#128C7E] rounded-full w-[3px]" style="height:80%"></div>
+                                                <div class="bg-[#128C7E] rounded-full w-[3px]" style="height:60%"></div>
+                                                <div class="bg-[#128C7E] rounded-full w-[3px]" style="height:100%"></div>
+                                                <div class="bg-[#128C7E] rounded-full w-[3px]" style="height:70%"></div>
+                                                <div class="bg-[#b0bec5] rounded-full w-[3px]" style="height:45%"></div>
+                                                <div class="bg-[#b0bec5] rounded-full w-[3px]" style="height:30%"></div>
+                                                <div class="bg-[#b0bec5] rounded-full w-[3px]" style="height:50%"></div>
+                                                <div class="bg-[#b0bec5] rounded-full w-[3px]" style="height:35%"></div>
+                                                <div class="bg-[#b0bec5] rounded-full w-[3px]" style="height:65%"></div>
+                                                <div class="bg-[#b0bec5] rounded-full w-[3px]" style="height:40%"></div>
+                                            </div>
+                                            <span class="text-[10px] text-[#8696a0] shrink-0">0:18</span>
+                                        </div>
+                                        <div class="flex justify-end px-2 pb-1.5 -mt-1">
+                                            <span class="text-[10px] text-[#8696a0]">09:10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Reaction emoji under voice -->
+                                <div class="flex justify-start ml-3 -mt-0.5">
+                                    <span class="bg-white text-xs px-1.5 py-0.5 rounded-full shadow border border-white/60 text-[13px]">🙏🏼 <span class="text-[10px] text-[#8696a0]">1</span></span>
+                                </div>
                             </div>
-                        </div>
-                        <iconify-icon icon="logos:whatsapp-icon" class="text-xl opacity-80"></iconify-icon>
-                    </div>
-
-                    <div class="wpp-bg p-4 space-y-3">
-                        <div class="flex justify-center">
-                            <span class="bg-black/20 text-white/60 text-[11px] px-3 py-1 rounded-full">Ontem</span>
-                        </div>
-
-                        <div class="flex justify-start">
-                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed">Estava achando que o problema era o preço. O Mapa dos Erros colocou na minha cara que eu perdia por amadorismo mesmo. Vergonha boa 😅</p>
-                                <span class="text-[11px] text-gray-400 block text-right mt-1">17:15</span>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-start">
-                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed">Já ajustei a postura no pregão e vou participar amanhã. Pelo menos agora sei o que estou fazendo</p>
-                                <span class="text-[11px] text-gray-400 block text-right mt-1">17:17</span>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-end">
-                            <div class="wpp-bubble-sent px-4 py-2.5 max-w-[75%] shadow-sm">
-                                <p class="text-gray-800 text-sm leading-relaxed font-medium">Perfeito, Roberto! A clareza muda o jogo completamente. Boa sorte amanhã — vai pra cima! 💪</p>
-                                <div class="flex items-center justify-end gap-1 mt-1">
-                                    <span class="text-[11px] text-gray-500">17:22</span>
-                                    <iconify-icon icon="lucide:check-check" class="text-[#53bdeb] text-sm"></iconify-icon>
+                            <!-- Input bar -->
+                            <div class="bg-[#f0f2f5] px-2 py-1.5 flex items-center gap-1.5">
+                                <div class="flex-1 bg-white rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-sm">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#8696a0"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+                                    <span class="text-[#8696a0] text-[12px] flex-1">Mensagem</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#8696a0"><path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z"/></svg>
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-[#00a884] flex items-center justify-center shrink-0">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <p class="text-center text-textoSecundario text-xs mt-3">João Silva · Atingiu Nível 2</p>
                 </div>
-            </div>
 
-            <div class="text-center mt-12">
+                <!-- ── PHONE 2 — Carla Mendes ── -->
+                <div class="mx-auto w-full max-w-[290px] md:max-w-none">
+                    <div class="bg-[#1c1c1e] rounded-[42px] p-[9px] shadow-[0_0_0_2px_#3a3a3c,0_25px_70px_rgba(0,0,0,0.75)]">
+                        <div class="rounded-[34px] overflow-hidden flex flex-col">
+                            <div class="bg-[#075E54] flex flex-col">
+                                <div class="flex justify-center pt-2 pb-0.5">
+                                    <div class="bg-[#1c1c1e] w-20 h-5 rounded-full"></div>
+                                </div>
+                                <div class="flex items-center justify-between px-4 py-0.5">
+                                    <span class="text-white text-[11px] font-semibold tracking-tight">14:07</span>
+                                    <div class="flex items-center gap-1.5">
+                                        <svg width="15" height="10" viewBox="0 0 15 10" fill="white"><rect x="0" y="6" width="2.5" height="4" rx="0.4"/><rect x="4" y="4" width="2.5" height="6" rx="0.4"/><rect x="8" y="2" width="2.5" height="8" rx="0.4"/><rect x="12" y="0" width="2.5" height="10" rx="0.4"/></svg>
+                                        <svg width="13" height="10" viewBox="0 0 18 13" fill="white"><path d="M9 3.5A8.5 8.5 0 0 1 16.5 7L18 5.5A10.5 10.5 0 0 0 9 1.5 10.5 10.5 0 0 0 0 5.5L1.5 7A8.5 8.5 0 0 1 9 3.5z"/><path d="M9 6.5A5.5 5.5 0 0 1 14.5 9.5L16 8A7.5 7.5 0 0 0 9 5 7.5 7.5 0 0 0 2 8L3.5 9.5A5.5 5.5 0 0 1 9 6.5z"/><circle cx="9" cy="12" r="1.5"/></svg>
+                                        <svg width="22" height="11" viewBox="0 0 24 12" fill="none"><rect x="0.5" y="0.5" width="20" height="11" rx="3" stroke="white" stroke-opacity="0.4"/><rect x="1.5" y="1.5" width="16" height="9" rx="2" fill="white"/><path d="M22 4v4a2 2 0 0 0 0-4z" fill="white" fill-opacity="0.45"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-[#075E54] px-3 py-2 flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="white" class="opacity-70 shrink-0"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                                <div class="w-8 h-8 rounded-full bg-[#1a7a45] flex items-center justify-center text-white font-bold text-[10px] shrink-0 border border-white/20">CM</div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-white font-semibold text-[13px] leading-none mb-0.5">Carla Mendes</p>
+                                    <p class="text-[#80cfc6] text-[10px] leading-none">online</p>
+                                </div>
+                                <div class="flex items-center gap-3 text-white/80">
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                    <svg width="4" height="16" viewBox="0 0 4 20" fill="currentColor"><circle cx="2" cy="2" r="2"/><circle cx="2" cy="10" r="2"/><circle cx="2" cy="18" r="2"/></svg>
+                                </div>
+                            </div>
+                            <div class="wpp-bg px-2.5 py-3 space-y-1" style="min-height:340px">
+                                <div class="flex justify-center mb-2">
+                                    <span class="bg-[#d9eaf3]/90 text-[#54656f] text-[10px] px-3 py-0.5 rounded-md shadow-sm">3 semanas atrás</span>
+                                </div>
+                                <!-- Received burst -->
+                                <div class="flex justify-start">
+                                    <div class="wpp-bubble-received px-3 py-1.5 max-w-[85%] shadow-sm text-[#111b21] text-[12.5px] leading-snug">
+                                        GENTE!! Acabamos de ganhar nossa primeira licitação 🎉🎉🎉
+                                        <span class="text-[10px] text-[#8696a0] block text-right mt-0.5 -mb-0.5 ml-3">14:07</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="bg-white px-3 py-1.5 max-w-[85%] shadow-sm rounded-[10px] text-[#111b21] text-[12.5px] leading-snug">
+                                        Contrato de R$48 mil com prefeitura 🏆
+                                        <span class="text-[10px] text-[#8696a0] block text-right mt-0.5 -mb-0.5 ml-3">14:07</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="bg-white px-3 py-1.5 max-w-[85%] shadow-sm rounded-[10px] text-[#111b21] text-[12.5px] leading-snug">
+                                        Apliquei o plano de ação à risca. O Mapa dos 10 Erros foi o que mais ajudou — tava cometendo 4 sem saber 😅
+                                        <span class="text-[10px] text-[#8696a0] block text-right mt-0.5 -mb-0.5 ml-3">14:09</span>
+                                    </div>
+                                </div>
+                                <!-- Sent reply -->
+                                <div class="flex justify-end mt-2">
+                                    <div class="wpp-bubble-sent px-3 py-1.5 max-w-[83%] shadow-sm text-[#111b21] text-[12.5px] leading-snug">
+                                        Carla!! Que notícia incrível 🏆 Diagnóstico correto + execução consistente. É isso!
+                                        <div class="flex items-center justify-end gap-0.5 mt-0.5 -mb-0.5">
+                                            <span class="text-[10px] text-[#8696a0]">14:22</span>
+                                            <svg width="15" height="10" viewBox="0 0 18 12" fill="#53bdeb"><path d="M12.5 1L6 7.5 3 4.5l-1.5 1.5L6 10.5 14 2.5 12.5 1zm3.5 0l-7.5 7.5-1.5-1.5L5.5 8.5l2 2 9-9L16 1z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Received follow up -->
+                                <div class="flex justify-start mt-1">
+                                    <div class="wpp-bubble-received px-3 py-1.5 max-w-[85%] shadow-sm text-[#111b21] text-[12.5px] leading-snug">
+                                        Vlw demais! Valeu cada centavo do kit 🙌
+                                        <span class="text-[10px] text-[#8696a0] block text-right mt-0.5 -mb-0.5 ml-3">14:25</span>
+                                    </div>
+                                </div>
+                                <!-- Reaction under last message -->
+                                <div class="flex justify-start ml-3 -mt-0.5">
+                                    <span class="bg-white text-xs px-1.5 py-0.5 rounded-full shadow border border-white/60 text-[13px]">🎉 <span class="text-[10px] text-[#8696a0]">2</span></span>
+                                </div>
+                            </div>
+                            <div class="bg-[#f0f2f5] px-2 py-1.5 flex items-center gap-1.5">
+                                <div class="flex-1 bg-white rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-sm">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#8696a0"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+                                    <span class="text-[#8696a0] text-[12px] flex-1">Mensagem</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#8696a0"><path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z"/></svg>
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-[#00a884] flex items-center justify-center shrink-0">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-textoSecundario text-xs mt-3">Carla Mendes · Primeiro contrato ganho</p>
+                </div>
+
+                <!-- ── PHONE 3 — Roberto Farias ── -->
+                <div class="mx-auto w-full max-w-[290px] md:max-w-none">
+                    <div class="bg-[#1c1c1e] rounded-[42px] p-[9px] shadow-[0_0_0_2px_#3a3a3c,0_25px_70px_rgba(0,0,0,0.75)]">
+                        <div class="rounded-[34px] overflow-hidden flex flex-col">
+                            <div class="bg-[#075E54] flex flex-col">
+                                <div class="flex justify-center pt-2 pb-0.5">
+                                    <div class="bg-[#1c1c1e] w-20 h-5 rounded-full"></div>
+                                </div>
+                                <div class="flex items-center justify-between px-4 py-0.5">
+                                    <span class="text-white text-[11px] font-semibold tracking-tight">17:15</span>
+                                    <div class="flex items-center gap-1.5">
+                                        <svg width="15" height="10" viewBox="0 0 15 10" fill="white"><rect x="0" y="6" width="2.5" height="4" rx="0.4"/><rect x="4" y="4" width="2.5" height="6" rx="0.4"/><rect x="8" y="2" width="2.5" height="8" rx="0.4"/><rect x="12" y="0" width="2.5" height="10" rx="0.4"/></svg>
+                                        <svg width="13" height="10" viewBox="0 0 18 13" fill="white"><path d="M9 3.5A8.5 8.5 0 0 1 16.5 7L18 5.5A10.5 10.5 0 0 0 9 1.5 10.5 10.5 0 0 0 0 5.5L1.5 7A8.5 8.5 0 0 1 9 3.5z"/><path d="M9 6.5A5.5 5.5 0 0 1 14.5 9.5L16 8A7.5 7.5 0 0 0 9 5 7.5 7.5 0 0 0 2 8L3.5 9.5A5.5 5.5 0 0 1 9 6.5z"/><circle cx="9" cy="12" r="1.5"/></svg>
+                                        <svg width="22" height="11" viewBox="0 0 24 12" fill="none"><rect x="0.5" y="0.5" width="20" height="11" rx="3" stroke="white" stroke-opacity="0.4"/><rect x="1.5" y="1.5" width="16" height="9" rx="2" fill="white"/><path d="M22 4v4a2 2 0 0 0 0-4z" fill="white" fill-opacity="0.45"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-[#075E54] px-3 py-2 flex items-center gap-2">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="white" class="opacity-70 shrink-0"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                                <div class="w-8 h-8 rounded-full bg-[#5b3a8c] flex items-center justify-center text-white font-bold text-[10px] shrink-0 border border-white/20">RF</div>
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-white font-semibold text-[13px] leading-none mb-0.5">Roberto Farias</p>
+                                    <p class="text-[#80cfc6] text-[10px] leading-none">visto por último às 17:30</p>
+                                </div>
+                                <div class="flex items-center gap-3 text-white/80">
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                    <svg width="4" height="16" viewBox="0 0 4 20" fill="currentColor"><circle cx="2" cy="2" r="2"/><circle cx="2" cy="10" r="2"/><circle cx="2" cy="18" r="2"/></svg>
+                                </div>
+                            </div>
+                            <div class="wpp-bg px-2.5 py-3 space-y-1" style="min-height:340px">
+                                <div class="flex justify-center mb-2">
+                                    <span class="bg-[#d9eaf3]/90 text-[#54656f] text-[10px] px-3 py-0.5 rounded-md shadow-sm">Ontem</span>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="wpp-bubble-received px-3 py-1.5 max-w-[85%] shadow-sm text-[#111b21] text-[12.5px] leading-snug">
+                                        Achei que o problema era o preço. O Mapa dos Erros colocou na minha cara que eu perdia por amadorismo mesmo 😅
+                                        <span class="text-[10px] text-[#8696a0] block text-right mt-0.5 -mb-0.5 ml-3">17:15</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="bg-white px-3 py-1.5 max-w-[85%] shadow-sm rounded-[10px] text-[#111b21] text-[12.5px] leading-snug">
+                                        Ajustei a postura e vou participar de um pregão amanhã. Pelo menos agora sei o que estou fazendo
+                                        <span class="text-[10px] text-[#8696a0] block text-right mt-0.5 -mb-0.5 ml-3">17:17</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end mt-2">
+                                    <div class="wpp-bubble-sent px-3 py-1.5 max-w-[83%] shadow-sm text-[#111b21] text-[12.5px] leading-snug">
+                                        Perfeito, Roberto! A clareza muda tudo. Vai pra cima! 💪
+                                        <div class="flex items-center justify-end gap-0.5 mt-0.5 -mb-0.5">
+                                            <span class="text-[10px] text-[#8696a0]">17:22</span>
+                                            <svg width="15" height="10" viewBox="0 0 18 12" fill="#53bdeb"><path d="M12.5 1L6 7.5 3 4.5l-1.5 1.5L6 10.5 14 2.5 12.5 1zm3.5 0l-7.5 7.5-1.5-1.5L5.5 8.5l2 2 9-9L16 1z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Update next day -->
+                                <div class="flex justify-center my-2">
+                                    <span class="bg-[#d9eaf3]/90 text-[#54656f] text-[10px] px-3 py-0.5 rounded-md shadow-sm">Hoje</span>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="wpp-bubble-received px-3 py-1.5 max-w-[85%] shadow-sm text-[#111b21] text-[12.5px] leading-snug">
+                                        Ganhei o pregão! 🎉 R$22k. O diagnóstico vale muito mais do que R$67
+                                        <span class="text-[10px] text-[#8696a0] block text-right mt-0.5 -mb-0.5 ml-3">10:04</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-start ml-3 -mt-0.5">
+                                    <span class="bg-white text-xs px-1.5 py-0.5 rounded-full shadow border border-white/60 text-[13px]">🔥 <span class="text-[10px] text-[#8696a0]">3</span></span>
+                                </div>
+                            </div>
+                            <div class="bg-[#f0f2f5] px-2 py-1.5 flex items-center gap-1.5">
+                                <div class="flex-1 bg-white rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-sm">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#8696a0"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+                                    <span class="text-[#8696a0] text-[12px] flex-1">Mensagem</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#8696a0"><path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z"/></svg>
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-[#00a884] flex items-center justify-center shrink-0">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-textoSecundario text-xs mt-3">Roberto Farias · Ganhou o pregão no dia seguinte</p>
+                </div>
+
+            </div><!-- end grid -->
+
+            <div class="text-center mt-14">
                 <a href="[LINK_HOTMART_AQUI]" id="cta-wpp"
                    class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg px-10 py-4 transition-colors duration-200 rounded-sm">
                     Quero ter essa clareza também — R$67
