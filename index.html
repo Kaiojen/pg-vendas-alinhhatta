@@ -160,7 +160,7 @@
 
             <div class="inline-flex items-center gap-2 border border-dourado/30 bg-dourado/5 px-3 py-1.5 rounded-full mb-8">
                 <span class="w-1.5 h-1.5 rounded-full bg-dourado animate-pulse"></span>
-                <span class="text-xs font-semibold tracking-widest text-douradoClaro uppercase">Alinhatta · Kit Digital · R$67</span>
+                <span class="text-xs font-semibold tracking-widest text-douradoClaro uppercase">Alinhatta · Kit Digital · <span class="line-through opacity-50">R$297</span> por R$67</span>
             </div>
 
             <h1 class="font-display font-bold leading-[1.05] mb-6">
@@ -172,6 +172,21 @@
             <p class="text-lg md:text-xl text-textoSecundario mb-8 max-w-xl leading-relaxed">
                 Em menos de 1 hora você tem o diagnóstico completo dos 7 pontos críticos e o plano de ação exato para o nível do seu negócio.
             </p>
+
+            <!-- Imagem do produto — visível só no mobile, antes dos bullets -->
+            <!-- Arquivo: ./assets/img/mockup-kit.png -->
+            <div class="w-full lg:hidden mb-8 relative">
+                <div class="absolute inset-0 bg-dourado/10 blur-[60px] rounded-full scale-75 translate-y-4 pointer-events-none"></div>
+                <img src="./assets/img/mockup-kit.png"
+                     alt="Kit Digital Diagnóstico de Licitações — PDF, Planilha e 4 Bônus"
+                     class="relative z-10 w-full max-w-sm mx-auto block"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <!-- Fallback placeholder enquanto a imagem não for adicionada -->
+                <div style="display:none;" class="relative z-10 w-full bg-surface1 border border-surface2 p-8 text-center rounded-sm">
+                    <div class="font-display text-3xl font-bold text-dourado mb-2">Diagnóstico<br>de Licitações</div>
+                    <p class="text-xs text-textoSecundario">PDF + Planilha + 4 Bônus</p>
+                </div>
+            </div>
 
             <ul class="space-y-4 mb-10 w-full">
                 <li class="flex items-start gap-3">
@@ -209,8 +224,9 @@
             </div>
         </div>
 
-        <!-- MOCKUP DO KIT -->
-        <div class="w-full lg:w-[45%]">
+        <!-- MOCKUP DO KIT — desktop only (mobile version aparece antes dos bullets) -->
+        <!-- Arquivo: ./assets/img/mockup-kit.png -->
+        <div class="hidden lg:block w-full lg:w-[45%]">
             <div class="relative">
                 <!-- Glow behind -->
                 <div class="absolute inset-0 bg-dourado/10 blur-[80px] rounded-full scale-75 translate-y-8"></div>
@@ -219,8 +235,12 @@
                 <div class="relative bg-surface1 border border-surface2 shadow-2xl overflow-hidden rounded-sm">
                     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(201,168,76,0.08),transparent_60%)]"></div>
 
-                    <!-- [MOCKUP DO KIT DIGITAL] — substitua este bloco por imagem real quando disponível -->
-                    <!-- Formato ideal: PNG 800x600 com fundo transparente — capa do PDF + planilha empilhados, reflexo suave no fundo -->
+                    <!-- Imagem real do kit — arquivo: ./assets/img/mockup-kit.png -->
+                    <img src="./assets/img/mockup-kit.png"
+                         alt="Kit Diagnóstico de Licitações — PDF, Planilha e 4 Bônus"
+                         class="relative z-10 w-full block"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.removeProperty('display');">
+                    <!-- Fallback card (oculto se imagem carregar) -->
                     <div class="relative z-10 p-10 md:p-12 flex flex-col items-center text-center">
                         <div class="w-full bg-preto border border-dourado/20 p-6 mb-4 text-left shadow-lg">
                             <div class="text-[10px] font-bold tracking-[0.25em] text-dourado/60 mb-3 uppercase">Alinhatta · Kit Digital · Diagnóstico Completo</div>
@@ -333,6 +353,24 @@
                         "Eu sei que tem dinheiro aí, mas não tenho tempo para parar minha operação e aprender tudo sozinho do zero."
                     </p>
                 </div>
+            </div>
+
+            <!-- CTA dentro da Dobra 2 -->
+            <div class="mt-14 pt-10 border-t border-surface2 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="text-left">
+                    <p class="text-textoSecundario text-sm uppercase tracking-widest font-semibold mb-2">Diagnóstico completo: PDF + Planilha + 4 Bônus</p>
+                    <div class="flex items-baseline gap-3">
+                        <span class="text-textoSecundario line-through text-xl">R$297</span>
+                        <span class="font-display font-bold text-4xl md:text-5xl text-dourado">R$67</span>
+                        <span class="bg-dourado/15 text-dourado text-xs font-bold px-2 py-1 rounded tracking-wider uppercase">77% off</span>
+                    </div>
+                    <p class="text-textoSecundario text-sm mt-1">Acesso imediato · Garantia de 7 dias</p>
+                </div>
+                <a href="[LINK_HOTMART_AQUI]" id="cta-dor"
+                   class="inline-flex min-h-[60px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg px-10 py-4 transition-colors duration-200 rounded-sm shrink-0 shadow-[0_0_30px_rgba(201,168,76,0.15)]">
+                    Quero o diagnóstico por R$67
+                    <iconify-icon icon="lucide:arrow-right" class="ml-2 text-xl"></iconify-icon>
+                </a>
             </div>
         </div>
     </section>
@@ -548,9 +586,74 @@
                             </div>
                             <h4 class="font-bold text-lg text-textoPrincipal">Planilha de Autodiagnóstico</h4>
                         </div>
-                        <p class="text-textoSecundario text-base leading-relaxed">
+                        <p class="text-textoSecundario text-base leading-relaxed mb-6">
                             28 perguntas estratégicas com cálculo automático. Responda e a planilha gera instantaneamente seu nível e o radar visual dos 7 pontos críticos — sem fórmula manual.
                         </p>
+                        <!-- Radar de Maturidade — gerado pela planilha -->
+                        <div class="bg-preto border border-dourado/20 p-4 rounded-sm">
+                            <p class="text-center text-[10px] font-bold tracking-[0.25em] text-dourado/60 uppercase mb-3">Exemplo de radar gerado pela planilha</p>
+                            <svg viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-xs mx-auto block" aria-label="Radar de Maturidade em Licitações">
+                                <defs>
+                                    <filter id="goldGlow">
+                                        <feGaussianBlur stdDeviation="3" result="blur"/>
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                                    </filter>
+                                </defs>
+                                <!-- Background -->
+                                <rect width="440" height="440" fill="#0a0a0a" rx="8"/>
+                                <!-- Title -->
+                                <text x="220" y="26" text-anchor="middle" font-family="Barlow, sans-serif" font-size="10" font-weight="700" letter-spacing="4" fill="#C9A84C" opacity="0.6">SEU RADAR DE MATURIDADE</text>
+                                <line x1="60" y1="34" x2="155" y2="34" stroke="#C9A84C" stroke-opacity="0.2" stroke-width="0.5"/>
+                                <line x1="285" y1="34" x2="380" y2="34" stroke="#C9A84C" stroke-opacity="0.2" stroke-width="0.5"/>
+                                <!-- Diamond decorators -->
+                                <polygon points="220,38 223,42 220,46 217,42" fill="#C9A84C" opacity="0.5"/>
+                                <polygon points="220,394 223,398 220,402 217,398" fill="#C9A84C" opacity="0.5"/>
+                                <!-- Grid rings at 25%, 50%, 75%, 100% -->
+                                <!-- 100% outer polygon -->
+                                <polygon points="220,60 345,120 376,256 289,364 151,364 64,256 95,120"
+                                         fill="none" stroke="#C9A84C" stroke-width="0.7" stroke-opacity="0.25"/>
+                                <!-- 75% ring -->
+                                <polygon points="220,100 313,145 337,247 272,328 168,328 103,247 127,145"
+                                         fill="none" stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.18"/>
+                                <!-- 50% ring -->
+                                <polygon points="220,140 282,170 298,238 254,292 186,292 142,238 158,170"
+                                         fill="none" stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.12"/>
+                                <!-- 25% ring -->
+                                <polygon points="220,180 251,196 260,228 237,256 203,256 180,228 189,196"
+                                         fill="none" stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.08"/>
+                                <!-- Axis lines (center to each outer point) -->
+                                <line x1="220" y1="212" x2="220" y2="60"   stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.2"/>
+                                <line x1="220" y1="212" x2="345" y2="120"  stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.2"/>
+                                <line x1="220" y1="212" x2="376" y2="256"  stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.2"/>
+                                <line x1="220" y1="212" x2="289" y2="364"  stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.2"/>
+                                <line x1="220" y1="212" x2="151" y2="364"  stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.2"/>
+                                <line x1="220" y1="212" x2="64"  y2="256"  stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.2"/>
+                                <line x1="220" y1="212" x2="95"  y2="120"  stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.2"/>
+                                <!-- Data polygon (example values ~60-85%) -->
+                                <polygon points="220,124 314,145 337,247 265,314 161,343 95,249 127,145"
+                                         fill="#C9A84C" fill-opacity="0.18" stroke="#C9A84C" stroke-width="1.8" filter="url(#goldGlow)"/>
+                                <!-- Data point dots -->
+                                <circle cx="220" cy="124" r="4" fill="#C9A84C"/>
+                                <circle cx="314" cy="145" r="4" fill="#C9A84C"/>
+                                <circle cx="337" cy="247" r="4" fill="#C9A84C"/>
+                                <circle cx="265" cy="314" r="4" fill="#C9A84C"/>
+                                <circle cx="161" cy="343" r="4" fill="#C9A84C"/>
+                                <circle cx="95"  cy="249" r="4" fill="#C9A84C"/>
+                                <circle cx="127" cy="145" r="4" fill="#C9A84C"/>
+                                <!-- Axis labels -->
+                                <text x="220" y="50" text-anchor="middle" font-family="Barlow, sans-serif" font-size="11" fill="#E2C47A" opacity="0.85">Gestão</text>
+                                <text x="220" y="63" text-anchor="middle" font-family="Barlow, sans-serif" font-size="11" fill="#E2C47A" opacity="0.85">Documental</text>
+                                <text x="365" y="110" text-anchor="start"  font-family="Barlow, sans-serif" font-size="11" fill="#E2C47A" opacity="0.85">Análise</text>
+                                <text x="365" y="123" text-anchor="start"  font-family="Barlow, sans-serif" font-size="11" fill="#E2C47A" opacity="0.85">de Editais</text>
+                                <text x="388" y="258" text-anchor="start"  font-family="Barlow, sans-serif" font-size="11" fill="#E2C47A" opacity="0.85">Precificação</text>
+                                <text x="295" y="382" text-anchor="middle" font-family="Barlow, sans-serif" font-size="11" fill="#E2C47A" opacity="0.85">Estratégia</text>
+                                <text x="140" y="382" text-anchor="middle" font-family="Barlow, sans-serif" font-size="11" fill="#E2C47A" opacity="0.85">Execução</text>
+                                <text x="48"  y="249" text-anchor="end"    font-family="Barlow, sans-serif" font-size="11" fill="#E2C47A" opacity="0.85">Proposta</text>
+                                <text x="82"  y="110" text-anchor="end"    font-family="Barlow, sans-serif" font-size="11" fill="#E2C47A" opacity="0.85">Resultados</text>
+                                <!-- Footer note -->
+                                <text x="220" y="420" text-anchor="middle" font-family="Barlow, sans-serif" font-size="10" fill="#C9A84C" opacity="0.4">Gerado automaticamente pela planilha de diagnóstico</text>
+                            </svg>
+                        </div>
                     </div>
                 </div>
 
@@ -566,30 +669,46 @@
                         </div>
                     </div>
                     <div class="space-y-7">
-                        <div class="flex gap-4">
-                            <div class="w-10 h-10 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">1</div>
+                        <!-- Bônus 01 — ícone: ./assets/img/bonus-01.png -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-14 h-14 shrink-0 rounded-sm overflow-hidden border border-dourado/20 bg-preto flex items-center justify-center">
+                                <img src="./assets/img/bonus-01.png" alt="Bônus 01"
+                                     class="w-full h-full object-cover"
+                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <span style="display:none;" class="w-full h-full items-center justify-center text-dourado font-bold text-base border border-dourado/20 rounded-sm">1</span>
+                            </div>
                             <div>
+                                <div class="text-[10px] font-bold tracking-widest text-dourado/60 uppercase mb-0.5">Bônus 01</div>
                                 <h4 class="font-bold text-textoPrincipal text-base mb-1">Checklist de Habilitação Documental</h4>
                                 <p class="text-sm text-textoSecundario leading-relaxed">Nunca mais seja eliminado por falta de um papel simples. O mapa completo da documentação obrigatória.</p>
                             </div>
                         </div>
-                        <div class="flex gap-4">
-                            <div class="w-10 h-10 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">2</div>
+                        <!-- Bônus 02 — ícone: ./assets/img/bonus-02.png -->
+                        <div class="flex gap-4 items-start">
+                            <div class="w-14 h-14 shrink-0 rounded-sm overflow-hidden border border-dourado/20 bg-preto flex items-center justify-center">
+                                <img src="./assets/img/bonus-02.png" alt="Bônus 02"
+                                     class="w-full h-full object-cover"
+                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <span style="display:none;" class="w-full h-full items-center justify-center text-dourado font-bold text-base border border-dourado/20 rounded-sm">2</span>
+                            </div>
                             <div>
+                                <div class="text-[10px] font-bold tracking-widest text-dourado/60 uppercase mb-0.5">Bônus 02</div>
                                 <h4 class="font-bold text-textoPrincipal text-base mb-1">Mapa dos 10 Erros que Eliminam Empresas</h4>
                                 <p class="text-sm text-textoSecundario leading-relaxed">1 página visual com os comportamentos que todos os perdedores em pregões têm em comum. Identifique e elimine.</p>
                             </div>
                         </div>
-                        <div class="flex gap-4">
-                            <div class="w-10 h-10 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">3</div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-14 h-14 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">3</div>
                             <div>
+                                <div class="text-[10px] font-bold tracking-widest text-dourado/60 uppercase mb-0.5">Bônus 03</div>
                                 <h4 class="font-bold text-textoPrincipal text-base mb-1">Simulador de Viabilidade</h4>
                                 <p class="text-sm text-textoSecundario leading-relaxed">8 perguntas diretas que revelam se sua empresa tem o perfil básico exigido para licitar com segurança.</p>
                             </div>
                         </div>
-                        <div class="flex gap-4">
-                            <div class="w-10 h-10 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">4</div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-14 h-14 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">4</div>
                             <div>
+                                <div class="text-[10px] font-bold tracking-widest text-dourado/60 uppercase mb-0.5">Bônus 04</div>
                                 <h4 class="font-bold text-textoPrincipal text-base mb-1">Edital Real Comentado</h4>
                                 <p class="text-sm text-textoSecundario leading-relaxed">Um edital público real extraído do portal com anotações e marcações estratégicas da equipe Alinhatta.</p>
                             </div>
@@ -614,22 +733,22 @@
                     <tbody class="divide-y divide-surface2 text-sm md:text-base">
                         <tr>
                             <td class="py-4 px-6 text-textoPrincipal">PDF Diagnóstico Completo</td>
-                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$97</td>
+                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$127</td>
                             <td class="py-4 px-6 text-dourado text-right"><span class="flex items-center justify-end gap-1.5"><iconify-icon icon="lucide:check-circle-2" class="text-base"></iconify-icon> Incluído</span></td>
                         </tr>
                         <tr>
                             <td class="py-4 px-6 text-textoPrincipal">Planilha Autodiagnóstico</td>
-                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$47</td>
+                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$67</td>
                             <td class="py-4 px-6 text-dourado text-right"><span class="flex items-center justify-end gap-1.5"><iconify-icon icon="lucide:check-circle-2" class="text-base"></iconify-icon> Incluída</span></td>
                         </tr>
                         <tr>
                             <td class="py-4 px-6 text-textoPrincipal">4 Bônus Exclusivos</td>
-                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$79</td>
+                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$103</td>
                             <td class="py-4 px-6 text-dourado text-right"><span class="flex items-center justify-end gap-1.5"><iconify-icon icon="lucide:check-circle-2" class="text-base"></iconify-icon> Incluídos</span></td>
                         </tr>
                         <tr class="bg-surface2/50">
                             <td class="py-5 px-6 font-bold text-textoPrincipal text-lg">TOTAL</td>
-                            <td class="py-5 px-6 font-bold text-textoSecundario line-through text-lg hidden md:table-cell">R$223</td>
+                            <td class="py-5 px-6 font-bold text-textoSecundario line-through text-lg hidden md:table-cell">R$297</td>
                             <td class="py-5 px-6 font-display font-bold text-dourado text-2xl md:text-3xl text-right">R$67</td>
                         </tr>
                     </tbody>
@@ -720,6 +839,22 @@
                     <p class="text-textoSecundario italic text-base leading-relaxed">
                         "Antes de investir em consultoria cara, comprei o kit. Descobrimos que <strong class="text-textoPrincipal not-italic">nem estávamos prontos documentalmente.</strong> Poupou dor de cabeça e nos preparou certo para o próximo passo."
                     </p>
+                </div>
+
+                <!-- Rafael Santos — depoimento em destaque (ocupa coluna completa) -->
+                <div class="bg-preto border border-dourado/20 p-7 md:p-8 w-[85vw] md:w-auto shrink-0 snap-center rounded-sm md:col-span-2">
+                    <div class="flex text-dourado text-lg mb-5">★★★★★</div>
+                    <iconify-icon icon="lucide:quote" class="text-dourado/20 text-5xl mb-3 block"></iconify-icon>
+                    <p class="text-textoPrincipal italic text-base md:text-lg leading-relaxed mb-6">
+                        "O Diagnóstico de Licitações da Alinhatta foi um divisor de águas para nossa empresa. Em poucas horas, conseguimos entender com clareza nosso nível de maturidade, identificar os principais pontos críticos e <strong class="text-dourado not-italic">definir um plano de ação realista e eficaz.</strong> É uma ferramenta indispensável para quem quer crescer com estratégia e segurança nas licitações."
+                    </p>
+                    <div class="border-t border-surface2 pt-5 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full border-2 border-dourado/40 bg-surface2 text-dourado font-bold flex items-center justify-center shrink-0 text-sm">RS</div>
+                        <div>
+                            <p class="font-bold text-textoPrincipal text-base">Rafael Santos</p>
+                            <p class="text-sm text-dourado/70 uppercase tracking-wider">R.S. · Diretor Comercial</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -1155,12 +1290,23 @@
     <section class="w-full py-24 md:py-32 bg-surface2 border-y border-surface1">
         <div class="max-w-3xl mx-auto px-6 md:px-12 flex flex-col items-center text-center">
 
-            <!-- Badge de garantia -->
-            <div class="relative mb-10 w-36 h-36 flex items-center justify-center">
-                <div class="garantia-badge absolute inset-0 rounded-full opacity-20 animate-spin" style="animation-duration: 12s;"></div>
-                <div class="absolute inset-2 rounded-full bg-surface2 border-2 border-dourado/40 flex flex-col items-center justify-center shadow-[0_0_30px_rgba(201,168,76,0.15)]">
-                    <iconify-icon icon="lucide:shield-check" class="text-dourado text-3xl mb-1"></iconify-icon>
-                    <div class="font-bold text-dourado text-xs leading-tight text-center px-2">GARANTIA<br>7 DIAS</div>
+            <!-- Badge de garantia — arquivo: ./assets/img/garantia.png -->
+            <!-- Dimensões ideais: 400x400px PNG com fundo transparente -->
+            <div class="mb-8 w-52 h-52 flex items-center justify-center relative">
+                <img src="./assets/img/garantia.png"
+                     alt="Garantia Incondicional 7 Dias — 100% do valor devolvido"
+                     class="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(201,168,76,0.25)]"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <!-- Fallback CSS badge -->
+                <div style="display:none;" class="w-full h-full items-center justify-center">
+                    <div class="relative w-44 h-44 flex items-center justify-center">
+                        <div class="garantia-badge absolute inset-0 rounded-full opacity-20 animate-spin" style="animation-duration:12s;"></div>
+                        <div class="absolute inset-2 rounded-full bg-surface2 border-2 border-dourado/40 flex flex-col items-center justify-center shadow-[0_0_30px_rgba(201,168,76,0.15)]">
+                            <iconify-icon icon="lucide:shield-check" class="text-dourado text-4xl mb-1"></iconify-icon>
+                            <div class="font-bold text-dourado text-xs leading-tight text-center px-2">GARANTIA INCONDICIONAL<br>7 DIAS</div>
+                            <div class="text-[10px] text-dourado/60 mt-1">100% do valor devolvido</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
