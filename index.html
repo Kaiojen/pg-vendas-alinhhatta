@@ -511,45 +511,42 @@
             <div class="mb-20">
                 <h3 class="text-center text-sm font-bold tracking-[0.25em] text-dourado/60 uppercase mb-12">Os 4 Níveis de Maturidade em Licitações</h3>
 
-                <!-- Desktop: horizontal -->
-                <div class="hidden md:flex justify-between items-start gap-4 relative">
-                    <!-- Linha conectora -->
-                    <div class="absolute top-8 left-[10%] right-[10%] h-px bg-gradient-to-r from-surface2 via-dourado/20 to-surface2 z-0"></div>
-
-                    <!-- Nível 1 -->
-                    <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
-                        <div class="w-16 h-16 rounded-full bg-surface1 border-2 border-surface2 group-hover:border-dourado/40 flex items-center justify-center font-display text-2xl text-textoSecundario group-hover:text-dourado transition-all duration-300 mb-5 shadow-lg">1</div>
-                        <div class="text-[10px] font-bold tracking-[0.2em] text-dourado/50 uppercase mb-1">Nível 01</div>
-                        <h4 class="font-bold text-base text-textoPrincipal mb-2">Iniciante</h4>
-                        <p class="text-sm text-textoSecundario leading-relaxed">Operação desestruturada, sem histórico governamental.</p>
-                        <div class="mt-2 text-[11px] text-textoSecundario/40 font-medium">28–55 pts</div>
-                    </div>
-
-                    <!-- Nível 2 -->
-                    <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
-                        <div class="w-16 h-16 rounded-full bg-surface1 border-2 border-surface2 group-hover:border-dourado/40 flex items-center justify-center font-display text-2xl text-textoSecundario group-hover:text-dourado transition-all duration-300 mb-5 shadow-lg">2</div>
-                        <div class="text-[10px] font-bold tracking-[0.2em] text-dourado/50 uppercase mb-1">Nível 02</div>
-                        <h4 class="font-bold text-base text-textoPrincipal mb-2">Em Desenvolvimento</h4>
-                        <p class="text-sm text-textoSecundario leading-relaxed">Participa ocasionalmente. Vitórias raras.</p>
-                        <div class="mt-2 text-[11px] text-textoSecundario/40 font-medium">56–84 pts</div>
-                    </div>
-
-                    <!-- Nível 3 — Destaque -->
-                    <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
-                        <div class="w-16 h-16 rounded-full bg-preto border-2 border-dourado/50 nivel-ativo flex items-center justify-center font-display text-2xl text-dourado mb-5">3</div>
-                        <div class="text-[10px] font-bold tracking-[0.2em] text-dourado uppercase mb-1">Nível 03</div>
-                        <h4 class="font-bold text-base text-dourado mb-2">Competitivo</h4>
-                        <p class="text-sm text-textoSecundario leading-relaxed">Ganha contratos, mas trava em precificação.</p>
-                        <div class="mt-2 text-[11px] text-dourado/50 font-medium">85–112 pts</div>
-                    </div>
-
-                    <!-- Nível 4 -->
-                    <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
-                        <div class="w-16 h-16 rounded-full bg-surface1 border-2 border-surface2 group-hover:border-dourado/40 flex items-center justify-center font-display text-2xl text-textoSecundario group-hover:text-dourado transition-all duration-300 mb-5 shadow-lg">4</div>
-                        <div class="text-[10px] font-bold tracking-[0.2em] text-dourado/50 uppercase mb-1">Nível 04</div>
-                        <h4 class="font-bold text-base text-textoPrincipal mb-2">Alto Desempenho</h4>
-                        <p class="text-sm text-textoSecundario leading-relaxed">Máquina B2G previsível e lucrativa.</p>
-                        <div class="mt-2 text-[11px] text-textoSecundario/40 font-medium">113–140 pts</div>
+                <!-- Desktop: imagem -->
+                <div class="hidden md:block">
+                    <img src="./assets/img/niveis-maturidade.png" alt="Os 4 Níveis de Maturidade em Licitações"
+                         class="w-full max-w-3xl mx-auto block"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <!-- Fallback HTML caso imagem falhe -->
+                    <div style="display:none;" class="flex justify-between items-start gap-4 relative">
+                        <div class="absolute top-8 left-[10%] right-[10%] h-px bg-gradient-to-r from-surface2 via-dourado/20 to-surface2 z-0"></div>
+                        <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
+                            <div class="w-16 h-16 rounded-full bg-surface1 border-2 border-surface2 flex items-center justify-center font-display text-2xl text-textoSecundario mb-5 shadow-lg">1</div>
+                            <div class="text-[10px] font-bold tracking-[0.2em] text-dourado/50 uppercase mb-1">Nível 01</div>
+                            <h4 class="font-bold text-base text-textoPrincipal mb-2">Iniciante</h4>
+                            <p class="text-sm text-textoSecundario leading-relaxed">Operação desestruturada, sem histórico governamental.</p>
+                            <div class="mt-2 text-[11px] text-textoSecundario/40 font-medium">28–55 pts</div>
+                        </div>
+                        <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
+                            <div class="w-16 h-16 rounded-full bg-surface1 border-2 border-surface2 flex items-center justify-center font-display text-2xl text-textoSecundario mb-5 shadow-lg">2</div>
+                            <div class="text-[10px] font-bold tracking-[0.2em] text-dourado/50 uppercase mb-1">Nível 02</div>
+                            <h4 class="font-bold text-base text-textoPrincipal mb-2">Em Desenvolvimento</h4>
+                            <p class="text-sm text-textoSecundario leading-relaxed">Participa ocasionalmente. Vitórias raras.</p>
+                            <div class="mt-2 text-[11px] text-textoSecundario/40 font-medium">56–84 pts</div>
+                        </div>
+                        <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
+                            <div class="w-16 h-16 rounded-full bg-preto border-2 border-dourado/50 nivel-ativo flex items-center justify-center font-display text-2xl text-dourado mb-5">3</div>
+                            <div class="text-[10px] font-bold tracking-[0.2em] text-dourado uppercase mb-1">Nível 03</div>
+                            <h4 class="font-bold text-base text-dourado mb-2">Competitivo</h4>
+                            <p class="text-sm text-textoSecundario leading-relaxed">Ganha contratos, mas trava em precificação.</p>
+                            <div class="mt-2 text-[11px] text-dourado/50 font-medium">85–112 pts</div>
+                        </div>
+                        <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
+                            <div class="w-16 h-16 rounded-full bg-surface1 border-2 border-surface2 flex items-center justify-center font-display text-2xl text-textoSecundario mb-5 shadow-lg">4</div>
+                            <div class="text-[10px] font-bold tracking-[0.2em] text-dourado/50 uppercase mb-1">Nível 04</div>
+                            <h4 class="font-bold text-base text-textoPrincipal mb-2">Alto Desempenho</h4>
+                            <p class="text-sm text-textoSecundario leading-relaxed">Máquina B2G previsível e lucrativa.</p>
+                            <div class="mt-2 text-[11px] text-textoSecundario/40 font-medium">113–140 pts</div>
+                        </div>
                     </div>
                 </div>
 
@@ -677,7 +674,10 @@
                         <!-- Radar de Maturidade — gerado pela planilha -->
                         <div class="bg-preto border border-dourado/20 p-4 rounded-sm">
                             <p class="text-center text-[10px] font-bold tracking-[0.25em] text-dourado/60 uppercase mb-3">Exemplo de radar gerado pela planilha</p>
-                            <svg viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-xs mx-auto block" aria-label="Radar de Maturidade em Licitações">
+                            <img src="./assets/img/radar.png" alt="Radar de Maturidade em Licitações"
+                                 class="w-full max-w-xs mx-auto block"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <svg style="display:none;" viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg" class="w-full max-w-xs mx-auto block" aria-label="Radar de Maturidade em Licitações">
                                 <defs>
                                     <filter id="goldGlow">
                                         <feGaussianBlur stdDeviation="3" result="blur"/>
@@ -783,7 +783,12 @@
                             </div>
                         </div>
                         <div class="flex gap-4 items-start">
-                            <div class="w-14 h-14 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">3</div>
+                            <div class="w-14 h-14 shrink-0 rounded-sm overflow-hidden border border-dourado/20 bg-preto flex items-center justify-center">
+                                <img src="./assets/img/bonus-03.png" alt="Bônus 03"
+                                     class="w-full h-full object-cover"
+                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <span style="display:none;" class="w-full h-full items-center justify-center text-dourado font-bold text-base border border-dourado/20 rounded-sm">3</span>
+                            </div>
                             <div>
                                 <div class="text-[10px] font-bold tracking-widest text-dourado/60 uppercase mb-0.5">Bônus 03</div>
                                 <h4 class="font-bold text-textoPrincipal text-base mb-1">Simulador de Viabilidade</h4>
@@ -791,7 +796,12 @@
                             </div>
                         </div>
                         <div class="flex gap-4 items-start">
-                            <div class="w-14 h-14 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">4</div>
+                            <div class="w-14 h-14 shrink-0 rounded-sm overflow-hidden border border-dourado/20 bg-preto flex items-center justify-center">
+                                <img src="./assets/img/bonus-04.png" alt="Bônus 04"
+                                     class="w-full h-full object-cover"
+                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <span style="display:none;" class="w-full h-full items-center justify-center text-dourado font-bold text-base border border-dourado/20 rounded-sm">4</span>
+                            </div>
                             <div>
                                 <div class="text-[10px] font-bold tracking-widest text-dourado/60 uppercase mb-0.5">Bônus 04</div>
                                 <h4 class="font-bold text-textoPrincipal text-base mb-1">Edital Real Comentado</h4>
@@ -972,7 +982,12 @@
                         "O Diagnóstico de Licitações da Alinhatta foi um divisor de águas para nossa empresa. Em poucas horas, conseguimos entender com clareza nosso nível de maturidade, identificar os principais pontos críticos e <strong class="text-dourado not-italic">definir um plano de ação realista e eficaz.</strong> É uma ferramenta indispensável para quem quer crescer com estratégia e segurança nas licitações."
                     </p>
                     <div class="border-t border-surface2 pt-5 flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full border-2 border-dourado/40 bg-surface2 text-dourado font-bold flex items-center justify-center shrink-0 text-sm">RS</div>
+                        <div class="w-12 h-12 rounded-full border-2 border-dourado/40 overflow-hidden shrink-0 bg-surface2 flex items-center justify-center">
+                            <img src="./assets/img/depoimento-rafael.png" alt="Rafael Santos"
+                                 class="w-full h-full object-cover"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <span style="display:none;" class="text-dourado font-bold text-sm">RS</span>
+                        </div>
                         <div>
                             <p class="font-bold text-textoPrincipal text-base">Rafael Santos</p>
                             <p class="text-sm text-dourado/70 uppercase tracking-wider">R.S. · Diretor Comercial</p>
