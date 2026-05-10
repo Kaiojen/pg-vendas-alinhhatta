@@ -170,7 +170,7 @@
             </h1>
 
             <p class="text-lg md:text-xl text-textoSecundario mb-8 max-w-xl leading-relaxed">
-                Em menos de 1 hora você tem o diagnóstico completo dos 7 pontos críticos e o plano de ação exato para o nível do seu negócio.
+                Chega de adivinhar onde está errando. Em menos de 1 hora você recebe um diagnóstico exato dos seus gargalos — e sai com um plano de ação pronto para aplicar ainda hoje.
             </p>
 
             <!-- Imagem do produto — visível só no mobile, antes dos bullets -->
@@ -181,31 +181,85 @@
                      alt="Kit Digital Diagnóstico de Licitações — PDF, Planilha e 4 Bônus"
                      class="relative z-10 w-full max-w-sm mx-auto block"
                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <!-- Fallback placeholder enquanto a imagem não for adicionada -->
-                <div style="display:none;" class="relative z-10 w-full bg-surface1 border border-surface2 p-8 text-center rounded-sm">
-                    <div class="font-display text-3xl font-bold text-dourado mb-2">Diagnóstico<br>de Licitações</div>
-                    <p class="text-xs text-textoSecundario">PDF + Planilha + 4 Bônus</p>
+                <!-- Fallback fiel ao produto real (ativa quando mockup-kit.png não está disponível) -->
+                <div style="display:none;" class="relative z-10 w-full select-none">
+                    <div class="relative flex gap-3 items-start">
+                        <!-- Capa do livro/PDF principal -->
+                        <div class="relative w-[52%] shrink-0 bg-[#0e0e0e] border border-dourado/40 shadow-[4px_4px_20px_rgba(0,0,0,0.6),-2px_0_0_#C9A84C] rounded-[2px] p-5 flex flex-col" style="min-height:280px;">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="font-sans font-bold tracking-[0.22em] text-[10px] text-dourado/70">ALINHATTA</div>
+                                <div class="bg-dourado text-preto text-[9px] font-black px-2 py-1 tracking-wide leading-tight text-center">PRODUTO<br>PRINCIPAL</div>
+                            </div>
+                            <div class="text-[9px] text-dourado/50 tracking-[0.18em] uppercase mb-3">Kit Digital · Diagnóstico Completo</div>
+                            <div class="font-display font-bold text-textoPrincipal leading-[1.05] mb-3" style="font-size:clamp(22px,5vw,30px);">Diagnóstico<br><span class="text-dourado">de Licitações</span></div>
+                            <p class="text-[10px] text-textoSecundario leading-relaxed mb-4">Descubra em qual etapa sua empresa está travando — e o que fazer primeiro.</p>
+                            <div class="w-full h-px bg-dourado/20 mb-3 relative flex items-center justify-center">
+                                <span class="w-1.5 h-1.5 bg-dourado/60 rotate-45 absolute"></span>
+                            </div>
+                            <div class="text-[8px] text-dourado/50 tracking-[0.15em] uppercase mb-auto">4 Níveis · 7 Pontos · Plano de Ação</div>
+                            <div class="flex items-center gap-3 mt-4 pt-3 border-t border-surface2">
+                                <span class="text-[8px] border border-dourado/30 text-dourado/70 px-1.5 py-0.5 font-semibold">PDF</span>
+                                <span class="text-dourado/30 text-xs">+</span>
+                                <span class="text-[8px] border border-dourado/30 text-dourado/70 px-1.5 py-0.5 font-semibold">PLANILHA</span>
+                                <span class="text-dourado/30 text-xs">+</span>
+                                <span class="text-[8px] border border-dourado/30 text-dourado/70 px-1.5 py-0.5 font-semibold">VÍDEO</span>
+                            </div>
+                        </div>
+                        <!-- Stack de bônus e tablet à direita -->
+                        <div class="flex-1 flex flex-col gap-2">
+                            <div class="bg-[#0e0e0e] border border-surface2 p-3 rounded-[2px] shadow-lg">
+                                <div class="text-[8px] text-dourado font-bold tracking-wider mb-1">BÔNUS 01</div>
+                                <div class="text-[11px] text-textoPrincipal font-semibold leading-tight">Checklist de Habilitação Documental</div>
+                            </div>
+                            <div class="bg-[#0e0e0e] border border-surface2 p-3 rounded-[2px] shadow-lg">
+                                <div class="text-[8px] text-dourado font-bold tracking-wider mb-1">BÔNUS 02</div>
+                                <div class="text-[11px] text-textoPrincipal font-semibold leading-tight">Os 10 Erros que Eliminam Empresas</div>
+                            </div>
+                            <!-- Mini tablet com radar -->
+                            <div class="bg-[#111] border border-dourado/20 p-3 rounded-sm shadow-xl">
+                                <div class="text-[7px] text-dourado/60 tracking-widest uppercase text-center mb-2">Diagnóstico de Licitações</div>
+                                <svg viewBox="0 0 80 70" class="w-full" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="40,5 65,18 72,44 55,62 25,62 8,44 15,18" fill="none" stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.3"/>
+                                    <polygon points="40,14 57,24 62,41 49,54 31,54 18,41 23,24" fill="none" stroke="#C9A84C" stroke-width="0.4" stroke-opacity="0.2"/>
+                                    <polygon points="40,10 61,22 67,43 52,58 28,58 13,43 19,22" fill="#C9A84C" fill-opacity="0.15" stroke="#C9A84C" stroke-width="1"/>
+                                    <circle cx="40" cy="10" r="1.5" fill="#C9A84C"/>
+                                    <circle cx="61" cy="22" r="1.5" fill="#C9A84C"/>
+                                    <circle cx="67" cy="43" r="1.5" fill="#C9A84C"/>
+                                    <circle cx="52" cy="58" r="1.5" fill="#C9A84C"/>
+                                    <circle cx="28" cy="58" r="1.5" fill="#C9A84C"/>
+                                    <circle cx="13" cy="43" r="1.5" fill="#C9A84C"/>
+                                    <circle cx="19" cy="22" r="1.5" fill="#C9A84C"/>
+                                </svg>
+                                <div class="flex justify-between text-[6px] text-dourado/50 mt-1">
+                                    <span>Nível: <strong class="text-dourado">INTERMEDIÁRIO</strong></span>
+                                    <span>48%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Reflexo/glow no fundo -->
+                    <div class="absolute -bottom-4 left-1/4 right-1/4 h-4 bg-dourado/20 blur-xl rounded-full pointer-events-none"></div>
                 </div>
             </div>
 
             <ul class="space-y-4 mb-10 w-full">
                 <li class="flex items-start gap-3">
                     <iconify-icon icon="lucide:check-circle-2" class="text-dourado text-xl mt-0.5 shrink-0"></iconify-icon>
-                    <span class="text-textoPrincipal text-base md:text-lg"><strong>PDF Estruturado</strong> — 4 níveis de maturidade + 7 pontos críticos + plano de ação</span>
+                    <span class="text-textoPrincipal text-base md:text-lg"><strong>PDF com os 7 pontos críticos</strong> — avalia onde você perde e entrega o plano de ação para o seu nível</span>
                 </li>
                 <li class="flex items-start gap-3">
                     <iconify-icon icon="lucide:check-circle-2" class="text-dourado text-xl mt-0.5 shrink-0"></iconify-icon>
-                    <span class="text-textoPrincipal text-base md:text-lg"><strong>Planilha Interativa</strong> — 28 perguntas com radar automático de nível</span>
+                    <span class="text-textoPrincipal text-base md:text-lg"><strong>Planilha que revela seu nível</strong> — 28 perguntas e o radar dos seus pontos cegos aparece automaticamente</span>
                 </li>
                 <li class="flex items-start gap-3">
                     <iconify-icon icon="lucide:check-circle-2" class="text-dourado text-xl mt-0.5 shrink-0"></iconify-icon>
-                    <span class="text-textoPrincipal text-base md:text-lg"><strong>4 Bônus Exclusivos</strong> — Checklist, Mapa de Erros, Simulador e Edital Comentado</span>
+                    <span class="text-textoPrincipal text-base md:text-lg"><strong>4 Bônus que eliminam erros comuns</strong> — Checklist, Mapa de Erros, Simulador e Edital Comentado</span>
                 </li>
             </ul>
 
             <a href="[LINK_HOTMART_AQUI]" id="cta-hero"
                class="btn-primary-pulse inline-flex min-h-[60px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg md:text-xl px-10 py-4 transition-colors duration-200 rounded-sm mb-4">
-                Quero meu Diagnóstico — R$67
+                Descobrir onde estou errando — R$67
             </a>
 
             <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-textoSecundario">
@@ -240,39 +294,67 @@
                          alt="Kit Diagnóstico de Licitações — PDF, Planilha e 4 Bônus"
                          class="relative z-10 w-full block"
                          onerror="this.style.display='none'; this.nextElementSibling.style.removeProperty('display');">
-                    <!-- Fallback card (oculto se imagem carregar) -->
-                    <div class="relative z-10 p-10 md:p-12 flex flex-col items-center text-center">
-                        <div class="w-full bg-preto border border-dourado/20 p-6 mb-4 text-left shadow-lg">
-                            <div class="text-[10px] font-bold tracking-[0.25em] text-dourado/60 mb-3 uppercase">Alinhatta · Kit Digital · Diagnóstico Completo</div>
-                            <div class="font-display text-3xl md:text-4xl font-bold text-textoPrincipal leading-tight mb-2">Diagnóstico<br>de Licitações</div>
-                            <p class="text-xs text-textoSecundario mb-6">Descubra em qual etapa sua empresa está travando — e o que fazer primeiro para mudar isso.</p>
-                            <div class="flex gap-1.5 items-center">
-                                <span class="text-[9px] border border-dourado/30 text-dourado px-2 py-0.5 font-semibold tracking-wider">PDF</span>
-                                <span class="text-dourado/30 text-xs">+</span>
-                                <span class="text-[9px] border border-dourado/30 text-dourado px-2 py-0.5 font-semibold tracking-wider">PLANILHA</span>
-                                <span class="text-dourado/30 text-xs">+</span>
-                                <span class="text-[9px] border border-dourado/30 text-dourado px-2 py-0.5 font-semibold tracking-wider">4 BÔNUS</span>
+                    <!-- Fallback fiel ao produto real (ativa quando mockup-kit.png não existe) -->
+                    <div class="relative z-10 p-8 md:p-10 select-none">
+                        <div class="relative flex gap-4 items-start">
+                            <!-- Capa principal com efeito livro -->
+                            <div class="relative w-[48%] shrink-0 bg-[#0c0c0c] border border-dourado/50 shadow-[6px_6px_24px_rgba(0,0,0,0.7),-3px_0_0_#C9A84C] p-6 flex flex-col" style="min-height:320px;">
+                                <div class="flex items-start justify-between mb-6">
+                                    <div class="font-sans font-bold tracking-[0.25em] text-[11px] text-dourado/70">ALINHATTA</div>
+                                    <div class="bg-dourado text-preto text-[9px] font-black px-2 py-1 leading-tight text-center">PRODUTO<br>PRINCIPAL</div>
+                                </div>
+                                <div class="text-[9px] text-dourado/50 tracking-[0.2em] uppercase mb-4">Kit Digital · Diagnóstico Completo</div>
+                                <div class="font-display font-bold text-textoPrincipal text-3xl leading-[1.05] mb-3">Diagnóstico<br><span class="text-dourado">de Licitações</span></div>
+                                <p class="text-[11px] text-textoSecundario leading-relaxed mb-4">Descubra em qual etapa sua empresa está travando — e o que fazer primeiro para mudar isso.</p>
+                                <div class="w-full h-px bg-dourado/20 mb-4 flex items-center justify-center relative">
+                                    <span class="w-1.5 h-1.5 bg-dourado/60 rotate-45 absolute bg-[#0c0c0c]"></span>
+                                </div>
+                                <div class="text-[9px] text-dourado/50 tracking-[0.12em] uppercase mb-auto">4 Níveis · 7 Pontos Críticos · Plano de Ação</div>
+                                <div class="flex items-center gap-2 mt-5 pt-4 border-t border-surface2">
+                                    <span class="text-[9px] border border-dourado/30 text-dourado px-2 py-0.5 font-semibold">PDF</span>
+                                    <span class="text-dourado/30">+</span>
+                                    <span class="text-[9px] border border-dourado/30 text-dourado px-2 py-0.5 font-semibold">PLANILHA</span>
+                                    <span class="text-dourado/30">+</span>
+                                    <span class="text-[9px] border border-dourado/30 text-dourado px-2 py-0.5 font-semibold">VÍDEO</span>
+                                </div>
+                            </div>
+                            <!-- Coluna direita: bônus + tablet com radar -->
+                            <div class="flex-1 flex flex-col gap-3">
+                                <div class="bg-[#0e0e0e] border border-surface2 p-3 shadow-lg">
+                                    <div class="text-[8px] text-dourado font-bold tracking-wider mb-1">BÔNUS 01</div>
+                                    <div class="text-xs text-textoPrincipal font-semibold leading-tight">Checklist de Habilitação Documental</div>
+                                </div>
+                                <div class="bg-[#0e0e0e] border border-surface2 p-3 shadow-lg">
+                                    <div class="text-[8px] text-dourado font-bold tracking-wider mb-1">BÔNUS 02</div>
+                                    <div class="text-xs text-textoPrincipal font-semibold leading-tight">Os 10 Erros que Eliminam Empresas</div>
+                                </div>
+                                <div class="bg-[#0e0e0e] border border-surface2 p-3 shadow-lg">
+                                    <div class="text-[8px] text-dourado font-bold tracking-wider mb-1">BÔNUS 03</div>
+                                    <div class="text-xs text-textoPrincipal font-semibold leading-tight">Simulador de Exequibilidade</div>
+                                </div>
+                                <!-- Tablet com mini radar -->
+                                <div class="bg-[#111] border border-dourado/25 p-4 shadow-xl">
+                                    <div class="text-[8px] text-dourado/60 tracking-widest uppercase text-center mb-2">Diagnóstico de Licitações</div>
+                                    <svg viewBox="0 0 100 88" class="w-full" xmlns="http://www.w3.org/2000/svg">
+                                        <polygon points="50,6 79,21 88,54 68,76 32,76 12,54 21,21" fill="none" stroke="#C9A84C" stroke-width="0.6" stroke-opacity="0.3"/>
+                                        <polygon points="50,16 70,28 77,51 62,67 38,67 23,51 30,28" fill="none" stroke="#C9A84C" stroke-width="0.5" stroke-opacity="0.2"/>
+                                        <polygon points="50,12 75,25 83,53 65,72 35,72 17,53 25,25" fill="#C9A84C" fill-opacity="0.15" stroke="#C9A84C" stroke-width="1.2"/>
+                                        <circle cx="50" cy="12" r="2" fill="#C9A84C"/>
+                                        <circle cx="75" cy="25" r="2" fill="#C9A84C"/>
+                                        <circle cx="83" cy="53" r="2" fill="#C9A84C"/>
+                                        <circle cx="65" cy="72" r="2" fill="#C9A84C"/>
+                                        <circle cx="35" cy="72" r="2" fill="#C9A84C"/>
+                                        <circle cx="17" cy="53" r="2" fill="#C9A84C"/>
+                                        <circle cx="25" cy="25" r="2" fill="#C9A84C"/>
+                                    </svg>
+                                    <div class="flex justify-between text-[8px] text-dourado/50 mt-2">
+                                        <span>Nível: <strong class="text-dourado/80">INTERMEDIÁRIO</strong></span>
+                                        <span class="text-dourado">48%</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- Mini bonus cards -->
-                        <div class="grid grid-cols-2 gap-3 w-full">
-                            <div class="bg-surface2 border border-white/5 p-3 text-left rounded-sm">
-                                <div class="text-[9px] text-dourado font-bold tracking-wider mb-1">BÔNUS 01</div>
-                                <div class="text-xs text-textoPrincipal font-semibold leading-tight">Checklist de Habilitação Documental</div>
-                            </div>
-                            <div class="bg-surface2 border border-white/5 p-3 text-left rounded-sm">
-                                <div class="text-[9px] text-dourado font-bold tracking-wider mb-1">BÔNUS 02</div>
-                                <div class="text-xs text-textoPrincipal font-semibold leading-tight">Os 10 Erros que Eliminam Empresas</div>
-                            </div>
-                            <div class="bg-surface2 border border-white/5 p-3 text-left rounded-sm">
-                                <div class="text-[9px] text-dourado font-bold tracking-wider mb-1">BÔNUS 03</div>
-                                <div class="text-xs text-textoPrincipal font-semibold leading-tight">Simulador de Exequibilidade</div>
-                            </div>
-                            <div class="bg-surface2 border border-white/5 p-3 text-left rounded-sm">
-                                <div class="text-[9px] text-dourado font-bold tracking-wider mb-1">BÔNUS 04</div>
-                                <div class="text-xs text-textoPrincipal font-semibold leading-tight">Edital Real Comentado</div>
-                            </div>
-                        </div>
+                        <div class="absolute -bottom-2 left-[15%] right-[15%] h-6 bg-dourado/15 blur-2xl rounded-full pointer-events-none"></div>
                     </div>
                 </div>
             </div>
@@ -309,9 +391,9 @@
                     O ciclo invisível da frustração nas licitações
                 </h2>
                 <div class="space-y-5 text-lg text-textoSecundario leading-relaxed">
-                    <p>O padrão é sempre o mesmo: a empresa entra no portal, procura um edital que pareça fácil, junta a documentação correndo e manda o preço. E perde. Na segunda tentativa, baixa o preço para ganhar no volume. E perde de novo.</p>
-                    <p>A culpa logo recai sobre os "preços impraticáveis" ou a "burocracia do sistema". Mas o que realmente está acontecendo é a ausência de processo. Vender para o governo não é loteria — é engenharia de vendas estruturada.</p>
-                    <p>Continuar operando sem um diagnóstico real do porquê sua empresa perde é queimar tempo da equipe e deixar dinheiro seguro na mesa, enquanto concorrentes menores fecham contratos lucrativos.</p>
+                    <p>Você entra no portal, escolhe o edital que parece mais viável, monta a documentação no sufoco e manda o preço. Não ganha. Na próxima tentativa, corta a margem achando que é o preço o problema. Não ganha de novo. E assim o ciclo se repete — mês após mês, edital após edital.</p>
+                    <p>A culpa naturalmente vai para o preço baixo da concorrência, para o sistema corrompido, para a burocracia. Mas a verdade incômoda é que <strong class="text-textoPrincipal">a maioria das perdas acontece antes de o preço sequer ser comparado</strong> — por falhas de processo que você nem sabe que tem.</p>
+                    <p>Cada pregão sem diagnóstico é uma aposta. E empresas que apostam acabam financiando as vitórias das que planejam. O problema não é a licitação — é que você está entrando sem saber exatamente onde está errando.</p>
                 </div>
             </div>
 
@@ -383,19 +465,22 @@
 
         <div class="max-w-5xl mx-auto px-6 md:px-12 text-center relative z-10">
             <h2 class="font-display font-bold text-[30px] md:text-5xl mb-8 leading-tight">
-                Cada licitação perdida sem entender o motivo
-                <span class="text-dourado block mt-1">é um ciclo que se repete.</span>
+                Cada licitação perdida sem diagnóstico
+                <span class="text-dourado block mt-1">é dinheiro certo deixado na mesa do concorrente.</span>
             </h2>
             <p class="text-lg md:text-xl text-textoSecundario mb-16 max-w-3xl mx-auto leading-relaxed">
-                Sem diagnóstico, você continua repetindo os mesmos erros processuais. Continua perdendo para aventureiros. E nunca sabe qual alavanca apertar para corrigir a rota. O custo da ignorância é medido em contratos perdidos.
+                Sem saber onde exatamente você falha, qualquer ajuste é chute. Você pode estar perdendo por documentação, por estratégia, por proposta ou por precificação — e cada causa tem uma solução diferente. Tratar o problema errado é perder mais tempo e mais contratos.
             </p>
 
-            <div class="bg-surface1 border-l-4 border-dourado p-8 md:p-12 inline-block shadow-2xl mb-12 text-center w-full max-w-lg mx-auto rounded-sm">
+            <div class="bg-surface1 border-l-4 border-dourado p-8 md:p-12 inline-block shadow-2xl mb-6 text-center w-full max-w-lg mx-auto rounded-sm">
                 <div class="text-7xl md:text-9xl font-display font-bold text-dourado mb-4 leading-none">7/10</div>
                 <p class="text-lg md:text-xl font-medium max-w-xs mx-auto text-textoPrincipal">
                     Empresas sem processo estruturado perdem em média 7 de cada 10 licitações que entram.
                 </p>
             </div>
+            <p class="text-base text-textoSecundario mb-12 max-w-sm mx-auto">
+                Os outros 3 que ganham? Têm processo. Têm diagnóstico. Têm método.
+            </p>
 
             <div class="mt-4">
                 <a href="[LINK_HOTMART_AQUI]" id="cta-agitacao"
@@ -418,7 +503,7 @@
                     Diagnóstico não é cartilha.<br>É o ponto de partida de quem está pronto para agir.
                 </h2>
                 <p class="text-lg text-textoSecundario leading-relaxed">
-                    A internet está cheia de cartilhas que tentam te "educar". O problema é que a cartilha não conhece a sua empresa. O diagnóstico qualifica a sua operação. Ele foi feito para quem já admitiu que tem uma falha no processo e precisa descobrir exatamente onde ela está para resolvê-la rápido.
+                    Há cursos, PDFs gratuitos e vídeos explicando "como funciona". O problema é que nenhum deles conhece a sua empresa. O diagnóstico é diferente: parte de onde você está hoje, avalia os 7 pontos que determinam resultado real e devolve um plano específico para o seu perfil. <strong class="text-textoPrincipal">Não teoria geral — ação específica para o nível da sua empresa.</strong>
                 </p>
             </div>
 
@@ -520,7 +605,7 @@
                 </p>
                 <a href="[LINK_HOTMART_AQUI]" id="cta-solucao"
                    class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg px-12 py-4 transition-colors duration-200 rounded-sm">
-                    Descobrir meu nível agora — R$67
+                    Quero meu plano de ação — R$67
                 </a>
             </div>
         </div>
@@ -722,34 +807,72 @@
                 <div class="bg-preto border-b border-surface2 px-6 py-4">
                     <h3 class="font-semibold text-textoPrincipal text-sm uppercase tracking-widest text-center">Valor Total do Kit</h3>
                 </div>
-                <table class="w-full text-left border-collapse">
+                <!-- Mobile: cards empilhados com preço visível -->
+                <div class="md:hidden divide-y divide-surface2">
+                    <div class="flex items-center justify-between px-5 py-4">
+                        <div>
+                            <p class="text-textoPrincipal font-medium text-sm">PDF Diagnóstico Completo</p>
+                            <p class="text-textoSecundario line-through text-xs mt-0.5">Separado: R$127</p>
+                        </div>
+                        <span class="flex items-center gap-1 text-dourado text-sm font-semibold whitespace-nowrap ml-3">
+                            <iconify-icon icon="lucide:check-circle-2" class="text-base shrink-0"></iconify-icon> Incluído
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between px-5 py-4">
+                        <div>
+                            <p class="text-textoPrincipal font-medium text-sm">Planilha Autodiagnóstico</p>
+                            <p class="text-textoSecundario line-through text-xs mt-0.5">Separado: R$67</p>
+                        </div>
+                        <span class="flex items-center gap-1 text-dourado text-sm font-semibold whitespace-nowrap ml-3">
+                            <iconify-icon icon="lucide:check-circle-2" class="text-base shrink-0"></iconify-icon> Incluída
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between px-5 py-4">
+                        <div>
+                            <p class="text-textoPrincipal font-medium text-sm">4 Bônus Exclusivos</p>
+                            <p class="text-textoSecundario line-through text-xs mt-0.5">Separado: R$103</p>
+                        </div>
+                        <span class="flex items-center gap-1 text-dourado text-sm font-semibold whitespace-nowrap ml-3">
+                            <iconify-icon icon="lucide:check-circle-2" class="text-base shrink-0"></iconify-icon> Incluídos
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between px-5 py-5 bg-surface2/50">
+                        <div>
+                            <p class="font-bold text-textoPrincipal text-base">TOTAL</p>
+                            <p class="text-textoSecundario line-through text-sm mt-0.5">Tudo separado: R$297</p>
+                        </div>
+                        <span class="font-display font-bold text-dourado text-3xl">R$67</span>
+                    </div>
+                </div>
+                <!-- Desktop: tabela completa -->
+                <table class="hidden md:table w-full text-left border-collapse">
                     <thead>
                         <tr class="border-b border-surface2">
                             <th class="py-4 px-6 font-semibold text-textoSecundario uppercase tracking-wider text-xs">Item</th>
-                            <th class="py-4 px-6 font-semibold text-textoSecundario uppercase tracking-wider text-xs w-24 hidden md:table-cell">Separado</th>
+                            <th class="py-4 px-6 font-semibold text-textoSecundario uppercase tracking-wider text-xs w-24">Separado</th>
                             <th class="py-4 px-6 font-semibold text-dourado uppercase tracking-wider text-xs w-28 text-right">No Kit</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-surface2 text-sm md:text-base">
+                    <tbody class="divide-y divide-surface2 text-base">
                         <tr>
                             <td class="py-4 px-6 text-textoPrincipal">PDF Diagnóstico Completo</td>
-                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$127</td>
+                            <td class="py-4 px-6 text-textoSecundario line-through">R$127</td>
                             <td class="py-4 px-6 text-dourado text-right"><span class="flex items-center justify-end gap-1.5"><iconify-icon icon="lucide:check-circle-2" class="text-base"></iconify-icon> Incluído</span></td>
                         </tr>
                         <tr>
                             <td class="py-4 px-6 text-textoPrincipal">Planilha Autodiagnóstico</td>
-                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$67</td>
+                            <td class="py-4 px-6 text-textoSecundario line-through">R$67</td>
                             <td class="py-4 px-6 text-dourado text-right"><span class="flex items-center justify-end gap-1.5"><iconify-icon icon="lucide:check-circle-2" class="text-base"></iconify-icon> Incluída</span></td>
                         </tr>
                         <tr>
                             <td class="py-4 px-6 text-textoPrincipal">4 Bônus Exclusivos</td>
-                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$103</td>
+                            <td class="py-4 px-6 text-textoSecundario line-through">R$103</td>
                             <td class="py-4 px-6 text-dourado text-right"><span class="flex items-center justify-end gap-1.5"><iconify-icon icon="lucide:check-circle-2" class="text-base"></iconify-icon> Incluídos</span></td>
                         </tr>
                         <tr class="bg-surface2/50">
                             <td class="py-5 px-6 font-bold text-textoPrincipal text-lg">TOTAL</td>
-                            <td class="py-5 px-6 font-bold text-textoSecundario line-through text-lg hidden md:table-cell">R$297</td>
-                            <td class="py-5 px-6 font-display font-bold text-dourado text-2xl md:text-3xl text-right">R$67</td>
+                            <td class="py-5 px-6 font-bold text-textoSecundario line-through text-lg">R$297</td>
+                            <td class="py-5 px-6 font-display font-bold text-dourado text-3xl text-right">R$67</td>
                         </tr>
                     </tbody>
                 </table>
@@ -758,7 +881,7 @@
             <div class="text-center">
                 <a href="[LINK_HOTMART_AQUI]" id="cta-kit"
                    class="inline-flex min-h-[60px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg md:text-xl px-12 py-4 transition-colors duration-200 shadow-[0_0_30px_rgba(201,168,76,0.15)] rounded-sm">
-                    Garantir o kit completo por R$67
+                    Quero identificar meus gargalos por R$67
                 </a>
                 <p class="text-sm text-textoSecundario mt-4">Acesso imediato · Garantia incondicional de 7 dias</p>
             </div>
@@ -869,7 +992,7 @@
             <div class="text-center mt-12 px-6">
                 <a href="[LINK_HOTMART_AQUI]" id="cta-provasocial"
                    class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg px-12 py-4 transition-colors duration-200 rounded-sm">
-                    Quero ser o próximo — Começar agora
+                    Quero meu diagnóstico agora — R$67
                 </a>
             </div>
         </div>
@@ -1335,27 +1458,47 @@
             </div>
 
             <h2 class="font-display font-bold text-[38px] md:text-5xl lg:text-[64px] mb-6 text-textoPrincipal leading-[1.05]">
-                Você sabe em qual nível está<br class="hidden md:block">
-                <span class="text-dourado">a sua empresa?</span>
+                Pare de apostar.<br class="hidden md:block">
+                <span class="text-dourado">Comece a saber.</span>
             </h2>
 
-            <p class="text-xl md:text-2xl text-dourado mb-8 font-medium">
-                Descubra em menos de 1 hora. Plano de ação incluso.
+            <p class="text-xl md:text-2xl text-textoSecundario mb-3 leading-relaxed max-w-xl mx-auto">
+                Em menos de 1 hora você para de adivinhar onde está errando — e começa a agir com precisão.
+            </p>
+            <p class="text-base text-dourado font-semibold mb-10">
+                Plano de ação incluído. Acesso imediato. Risco zero.
             </p>
 
-            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-textoSecundario/70 mb-12 uppercase tracking-wider font-semibold">
-                <span>PDF + Planilha + 4 Bônus</span>
-                <span class="hidden md:inline text-dourado/30">·</span>
-                <span>Acesso Imediato</span>
-                <span class="hidden md:inline text-dourado/30">·</span>
-                <span>Garantia 7 Dias</span>
+            <!-- Recap de valor antes do CTA -->
+            <div class="bg-surface1 border border-surface2 rounded-sm p-5 max-w-sm mx-auto mb-8 text-left space-y-2">
+                <div class="flex items-center justify-between">
+                    <span class="text-textoSecundario text-sm">PDF com 7 pontos críticos</span>
+                    <span class="text-textoSecundario line-through text-sm">R$127</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-textoSecundario text-sm">Planilha de autodiagnóstico</span>
+                    <span class="text-textoSecundario line-through text-sm">R$67</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-textoSecundario text-sm">4 Bônus exclusivos</span>
+                    <span class="text-textoSecundario line-through text-sm">R$103</span>
+                </div>
+                <div class="h-px bg-surface2 my-1"></div>
+                <div class="flex items-center justify-between">
+                    <span class="text-textoPrincipal font-bold">Tudo por apenas</span>
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-textoSecundario line-through text-sm">R$297</span>
+                        <span class="font-display font-bold text-dourado text-2xl">R$67</span>
+                    </div>
+                </div>
             </div>
 
             <a href="[LINK_HOTMART_AQUI]" id="cta-final"
-               class="flex flex-col items-center justify-center w-full max-w-sm mx-auto bg-dourado hover:bg-douradoClaro text-preto font-black px-8 py-5 min-h-[80px] mb-8 transition-all duration-200 hover:scale-[1.02] shadow-[0_0_50px_rgba(201,168,76,0.2)] hover:shadow-[0_0_60px_rgba(201,168,76,0.35)] rounded-sm">
-                <span class="text-xl md:text-2xl">GARANTIR MEU DIAGNÓSTICO</span>
-                <span class="text-base font-bold opacity-80 mt-1">POR APENAS R$67</span>
+               class="flex flex-col items-center justify-center w-full max-w-sm mx-auto bg-dourado hover:bg-douradoClaro text-preto font-black px-8 py-5 min-h-[80px] mb-4 transition-all duration-200 hover:scale-[1.02] shadow-[0_0_50px_rgba(201,168,76,0.2)] hover:shadow-[0_0_60px_rgba(201,168,76,0.35)] rounded-sm">
+                <span class="text-xl md:text-2xl">QUERO MEU DIAGNÓSTICO AGORA</span>
+                <span class="text-base font-bold opacity-80 mt-1">POR APENAS R$67 · ACESSO IMEDIATO</span>
             </a>
+            <p class="text-sm text-textoSecundario/60 mb-8">Garantia incondicional de 7 dias · Se não gostar, devolvemos tudo</p>
 
             <!-- Selos de pagamento -->
             <div class="flex flex-col items-center gap-4 opacity-50 mt-4">
