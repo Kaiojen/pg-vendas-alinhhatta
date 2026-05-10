@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Licitações — Alinhatta | Descubra por que sua empresa não ganha pregões</title>
+    <meta name="description" content="Em menos de 1 hora descubra exatamente onde sua empresa trava nas licitações e o que fazer primeiro. Kit Digital R$67 — PDF + Planilha + 4 Bônus.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- META PIXEL AQUI -->
+    <!-- GTM HEAD AQUI -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        preto: '#070707',
+                        dourado: '#C9A84C',
+                        douradoClaro: '#E2C47A',
+                        textoPrincipal: '#F5F0E8',
+                        textoSecundario: 'rgba(245,240,232,0.55)',
+                        surface1: '#141414',
+                        surface2: '#1E1E1E',
+                    },
+                    fontFamily: {
+                        display: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Barlow', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #070707; }
+        ::-webkit-scrollbar-thumb { background: #1E1E1E; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #C9A84C; }
+
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* WhatsApp realistic bubbles */
+        .wpp-bubble-received {
+            background: #fff;
+            border-radius: 0 12px 12px 12px;
+            position: relative;
+        }
+        .wpp-bubble-received::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -8px;
+            border-width: 0 8px 8px 0;
+            border-style: solid;
+            border-color: transparent #fff transparent transparent;
+        }
+        .wpp-bubble-sent {
+            background: #d9fdd3;
+            border-radius: 12px 0 12px 12px;
+            position: relative;
+        }
+        .wpp-bubble-sent::before {
+            content: '';
+            position: absolute;
+            top: 0; right: -8px;
+            border-width: 0 0 8px 8px;
+            border-style: solid;
+            border-color: transparent transparent transparent #d9fdd3;
+        }
+
+        /* Sticky mobile CTA */
+        @media (max-width: 768px) {
+            .sticky-cta {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 50;
+                padding: 12px 16px;
+                background: linear-gradient(to top, #070707 80%, transparent);
+            }
+        }
+        @media (min-width: 769px) {
+            .sticky-cta { display: none; }
+        }
+
+        /* Pulse animation for primary CTA */
+        @keyframes goldPulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(201,168,76,0.15); }
+            50% { box-shadow: 0 0 40px rgba(201,168,76,0.35); }
+        }
+        .btn-primary-pulse {
+            animation: goldPulse 3s ease-in-out infinite;
+        }
+
+        /* WPP background pattern */
+        .wpp-bg {
+            background-color: #e5ddd5;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c5b9ac' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Level glow on active */
+        .nivel-ativo {
+            box-shadow: 0 0 25px rgba(201,168,76,0.35);
+        }
+
+        /* Guarantee badge */
+        .garantia-badge {
+            background: conic-gradient(from 0deg, #C9A84C, #E2C47A, #C9A84C, #9a7a2e, #C9A84C);
+            border-radius: 50%;
+        }
+
+        /* Smooth section fade */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(201,168,76,0.2), transparent);
+        }
+    </style>
+</head>
+<body class="bg-preto text-textoPrincipal font-sans antialiased selection:bg-dourado selection:text-preto">
+
+<!-- GTM NOSCRIPT AQUI -->
+
+<!-- ========================
+     STICKY MOBILE CTA
+========================= -->
+<div class="sticky-cta">
+    <a href="[LINK_HOTMART_AQUI]" class="flex items-center justify-between w-full bg-dourado hover:bg-douradoClaro text-preto font-black text-base px-5 py-4 transition-colors duration-200 rounded-sm shadow-xl">
+        <span>GARANTIR MEU DIAGNÓSTICO</span>
+        <span class="text-sm font-bold opacity-80">R$67 →</span>
+    </a>
+</div>
+
+<!-- ========================
+     WRAP PRINCIPAL
+========================= -->
+<div class="border-l-[3px] border-dourado min-h-screen w-full relative overflow-x-hidden">
+
+    <!-- HEADER -->
+    <header class="w-full max-w-7xl mx-auto px-6 md:px-12 py-6 md:py-8 flex items-center justify-between">
+        <div class="font-sans font-bold tracking-[0.3em] text-base md:text-lg text-textoPrincipal">
+            ALINHATTA
+        </div>
+        <a href="[LINK_HOTMART_AQUI]" class="hidden md:inline-flex items-center gap-2 border border-dourado/40 text-dourado hover:bg-dourado hover:text-preto text-sm font-semibold tracking-wide px-5 py-2.5 transition-colors duration-200">
+            Comprar — R$67
+        </a>
+    </header>
+
+    <!-- ========================
+         DOBRA 1: HERO
+    ========================= -->
+    <section class="w-full max-w-7xl mx-auto px-6 md:px-12 pt-4 pb-20 md:py-20 lg:py-28 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div class="w-full lg:w-[55%] flex flex-col items-start">
+
+            <div class="inline-flex items-center gap-2 border border-dourado/30 bg-dourado/5 px-3 py-1.5 rounded-full mb-8">
+                <span class="w-1.5 h-1.5 rounded-full bg-dourado animate-pulse"></span>
+                <span class="text-xs font-semibold tracking-widest text-douradoClaro uppercase">Alinhatta · Kit Digital · R$67</span>
+            </div>
+
+            <h1 class="font-display font-bold leading-[1.05] mb-6">
+                <span class="block text-[42px] md:text-5xl lg:text-[60px] text-textoPrincipal">Descubra em qual etapa sua empresa</span>
+                <span class="block text-[42px] md:text-5xl lg:text-[60px] text-dourado">está travando nas licitações</span>
+                <span class="block text-[42px] md:text-5xl lg:text-[60px] text-textoPrincipal">— e o que fazer primeiro.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-textoSecundario mb-8 max-w-xl leading-relaxed">
+                Em menos de 1 hora você tem o diagnóstico completo dos 7 pontos críticos e o plano de ação exato para o nível do seu negócio.
+            </p>
+
+            <ul class="space-y-4 mb-10 w-full">
+                <li class="flex items-start gap-3">
+                    <iconify-icon icon="lucide:check-circle-2" class="text-dourado text-xl mt-0.5 shrink-0"></iconify-icon>
+                    <span class="text-textoPrincipal text-base md:text-lg"><strong>PDF Estruturado</strong> — 4 níveis de maturidade + 7 pontos críticos + plano de ação</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <iconify-icon icon="lucide:check-circle-2" class="text-dourado text-xl mt-0.5 shrink-0"></iconify-icon>
+                    <span class="text-textoPrincipal text-base md:text-lg"><strong>Planilha Interativa</strong> — 28 perguntas com radar automático de nível</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <iconify-icon icon="lucide:check-circle-2" class="text-dourado text-xl mt-0.5 shrink-0"></iconify-icon>
+                    <span class="text-textoPrincipal text-base md:text-lg"><strong>4 Bônus Exclusivos</strong> — Checklist, Mapa de Erros, Simulador e Edital Comentado</span>
+                </li>
+            </ul>
+
+            <a href="[LINK_HOTMART_AQUI]" id="cta-hero"
+               class="btn-primary-pulse inline-flex min-h-[60px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg md:text-xl px-10 py-4 transition-colors duration-200 rounded-sm mb-4">
+                Quero meu Diagnóstico — R$67
+            </a>
+
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-textoSecundario">
+                <span class="flex items-center gap-1.5">
+                    <iconify-icon icon="lucide:shield-check" class="text-dourado/70"></iconify-icon>
+                    Garantia de 7 dias
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <iconify-icon icon="lucide:zap" class="text-dourado/70"></iconify-icon>
+                    Acesso imediato
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <iconify-icon icon="lucide:lock" class="text-dourado/70"></iconify-icon>
+                    Pagamento seguro Hotmart
+                </span>
+            </div>
+        </div>
+
+        <!-- MOCKUP DO KIT -->
+        <div class="w-full lg:w-[45%]">
+            <div class="relative">
+                <!-- Glow behind -->
+                <div class="absolute inset-0 bg-dourado/10 blur-[80px] rounded-full scale-75 translate-y-8"></div>
+
+                <!-- Main mockup card -->
+                <div class="relative bg-surface1 border border-surface2 shadow-2xl overflow-hidden rounded-sm">
+                    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(201,168,76,0.08),transparent_60%)]"></div>
+
+                    <!-- [MOCKUP DO KIT DIGITAL] — substitua este bloco por imagem real quando disponível -->
+                    <!-- Formato ideal: PNG 800x600 com fundo transparente — capa do PDF + planilha empilhados, reflexo suave no fundo -->
+                    <div class="relative z-10 p-10 md:p-12 flex flex-col items-center text-center">
+                        <div class="w-full bg-preto border border-dourado/20 p-6 mb-4 text-left shadow-lg">
+                            <div class="text-[10px] font-bold tracking-[0.25em] text-dourado/60 mb-3 uppercase">Alinhatta · Kit Digital · Diagnóstico Completo</div>
+                            <div class="font-display text-3xl md:text-4xl font-bold text-textoPrincipal leading-tight mb-2">Diagnóstico<br>de Licitações</div>
+                            <p class="text-xs text-textoSecundario mb-6">Descubra em qual etapa sua empresa está travando — e o que fazer primeiro para mudar isso.</p>
+                            <div class="flex gap-1.5 items-center">
+                                <span class="text-[9px] border border-dourado/30 text-dourado px-2 py-0.5 font-semibold tracking-wider">PDF</span>
+                                <span class="text-dourado/30 text-xs">+</span>
+                                <span class="text-[9px] border border-dourado/30 text-dourado px-2 py-0.5 font-semibold tracking-wider">PLANILHA</span>
+                                <span class="text-dourado/30 text-xs">+</span>
+                                <span class="text-[9px] border border-dourado/30 text-dourado px-2 py-0.5 font-semibold tracking-wider">4 BÔNUS</span>
+                            </div>
+                        </div>
+                        <!-- Mini bonus cards -->
+                        <div class="grid grid-cols-2 gap-3 w-full">
+                            <div class="bg-surface2 border border-white/5 p-3 text-left rounded-sm">
+                                <div class="text-[9px] text-dourado font-bold tracking-wider mb-1">BÔNUS 01</div>
+                                <div class="text-xs text-textoPrincipal font-semibold leading-tight">Checklist de Habilitação Documental</div>
+                            </div>
+                            <div class="bg-surface2 border border-white/5 p-3 text-left rounded-sm">
+                                <div class="text-[9px] text-dourado font-bold tracking-wider mb-1">BÔNUS 02</div>
+                                <div class="text-xs text-textoPrincipal font-semibold leading-tight">Os 10 Erros que Eliminam Empresas</div>
+                            </div>
+                            <div class="bg-surface2 border border-white/5 p-3 text-left rounded-sm">
+                                <div class="text-[9px] text-dourado font-bold tracking-wider mb-1">BÔNUS 03</div>
+                                <div class="text-xs text-textoPrincipal font-semibold leading-tight">Simulador de Exequibilidade</div>
+                            </div>
+                            <div class="bg-surface2 border border-white/5 p-3 text-left rounded-sm">
+                                <div class="text-[9px] text-dourado font-bold tracking-wider mb-1">BÔNUS 04</div>
+                                <div class="text-xs text-textoPrincipal font-semibold leading-tight">Edital Real Comentado</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="w-full bg-surface1 border-y border-surface2 py-5">
+        <div class="max-w-3xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10">
+            <span class="flex items-center gap-2.5 text-sm text-textoSecundario">
+                <iconify-icon icon="lucide:lock" class="text-dourado text-lg"></iconify-icon>
+                Pagamento seguro Hotmart
+            </span>
+            <span class="hidden md:block w-1 h-1 rounded-full bg-dourado/30"></span>
+            <span class="flex items-center gap-2.5 text-sm text-textoSecundario">
+                <iconify-icon icon="lucide:download-cloud" class="text-dourado text-lg"></iconify-icon>
+                Acesso imediato após o pagamento
+            </span>
+            <span class="hidden md:block w-1 h-1 rounded-full bg-dourado/30"></span>
+            <span class="flex items-center gap-2.5 text-sm text-textoSecundario">
+                <iconify-icon icon="lucide:shield-check" class="text-dourado text-lg"></iconify-icon>
+                Garantia de 7 dias
+            </span>
+        </div>
+    </div>
+
+    <!-- ========================
+         DOBRA 2: DOR
+    ========================= -->
+    <section class="w-full bg-surface1 py-24 md:py-32 border-b border-surface2">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="max-w-3xl mx-auto mb-16">
+                <h2 class="font-display font-bold text-[30px] md:text-4xl text-dourado mb-8 leading-tight">
+                    O ciclo invisível da frustração nas licitações
+                </h2>
+                <div class="space-y-5 text-lg text-textoSecundario leading-relaxed">
+                    <p>O padrão é sempre o mesmo: a empresa entra no portal, procura um edital que pareça fácil, junta a documentação correndo e manda o preço. E perde. Na segunda tentativa, baixa o preço para ganhar no volume. E perde de novo.</p>
+                    <p>A culpa logo recai sobre os "preços impraticáveis" ou a "burocracia do sistema". Mas o que realmente está acontecendo é a ausência de processo. Vender para o governo não é loteria — é engenharia de vendas estruturada.</p>
+                    <p>Continuar operando sem um diagnóstico real do porquê sua empresa perde é queimar tempo da equipe e deixar dinheiro seguro na mesa, enquanto concorrentes menores fecham contratos lucrativos.</p>
+                </div>
+            </div>
+
+            <!-- Cards de dor -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="bg-preto border border-dourado/10 hover:border-dourado/25 p-7 transition-colors duration-300 rounded-sm relative">
+                    <iconify-icon icon="lucide:quote" class="text-dourado/15 text-5xl absolute top-4 right-4"></iconify-icon>
+                    <p class="text-textoPrincipal text-base leading-relaxed relative z-10">
+                        "Participo mas nunca ganho e não sei exatamente por quê. Parece que o sistema já tem cartas marcadas."
+                    </p>
+                </div>
+                <div class="bg-preto border border-dourado/10 hover:border-dourado/25 p-7 transition-colors duration-300 rounded-sm relative">
+                    <iconify-icon icon="lucide:quote" class="text-dourado/15 text-5xl absolute top-4 right-4"></iconify-icon>
+                    <p class="text-textoPrincipal text-base leading-relaxed relative z-10">
+                        "Tenho medo de entrar de forma errada e esquecer um detalhe no edital que vire um problema jurídico."
+                    </p>
+                </div>
+                <div class="bg-preto border border-dourado/10 hover:border-dourado/25 p-7 transition-colors duration-300 rounded-sm relative">
+                    <iconify-icon icon="lucide:quote" class="text-dourado/15 text-5xl absolute top-4 right-4"></iconify-icon>
+                    <p class="text-textoPrincipal text-base leading-relaxed relative z-10">
+                        "Não sei se a estrutura atual da minha empresa está preparada para aguentar as exigências de um contrato público."
+                    </p>
+                </div>
+                <div class="bg-preto border border-dourado/10 hover:border-dourado/25 p-7 transition-colors duration-300 rounded-sm relative">
+                    <iconify-icon icon="lucide:quote" class="text-dourado/15 text-5xl absolute top-4 right-4"></iconify-icon>
+                    <p class="text-textoPrincipal text-base leading-relaxed relative z-10">
+                        "Já perdi uma licitação que estava ganha por causa de um documento com validade vencida. Raiva total."
+                    </p>
+                </div>
+                <div class="bg-preto border border-dourado/10 hover:border-dourado/25 p-7 transition-colors duration-300 rounded-sm relative">
+                    <iconify-icon icon="lucide:quote" class="text-dourado/15 text-5xl absolute top-4 right-4"></iconify-icon>
+                    <p class="text-textoPrincipal text-base leading-relaxed relative z-10">
+                        "Vejo concorrentes menores do que eu, com menos estrutura, ganhando pregões que eu nem chego perto."
+                    </p>
+                </div>
+                <div class="bg-preto border border-dourado/10 hover:border-dourado/25 p-7 transition-colors duration-300 rounded-sm relative">
+                    <iconify-icon icon="lucide:quote" class="text-dourado/15 text-5xl absolute top-4 right-4"></iconify-icon>
+                    <p class="text-textoPrincipal text-base leading-relaxed relative z-10">
+                        "Eu sei que tem dinheiro aí, mas não tenho tempo para parar minha operação e aprender tudo sozinho do zero."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 3: AGITAÇÃO
+    ========================= -->
+    <section class="w-full py-24 md:py-32 bg-preto relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-dourado/4 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 md:px-12 text-center relative z-10">
+            <h2 class="font-display font-bold text-[30px] md:text-5xl mb-8 leading-tight">
+                Cada licitação perdida sem entender o motivo
+                <span class="text-dourado block mt-1">é um ciclo que se repete.</span>
+            </h2>
+            <p class="text-lg md:text-xl text-textoSecundario mb-16 max-w-3xl mx-auto leading-relaxed">
+                Sem diagnóstico, você continua repetindo os mesmos erros processuais. Continua perdendo para aventureiros. E nunca sabe qual alavanca apertar para corrigir a rota. O custo da ignorância é medido em contratos perdidos.
+            </p>
+
+            <div class="bg-surface1 border-l-4 border-dourado p-8 md:p-12 inline-block shadow-2xl mb-12 text-center w-full max-w-lg mx-auto rounded-sm">
+                <div class="text-7xl md:text-9xl font-display font-bold text-dourado mb-4 leading-none">7/10</div>
+                <p class="text-lg md:text-xl font-medium max-w-xs mx-auto text-textoPrincipal">
+                    Empresas sem processo estruturado perdem em média 7 de cada 10 licitações que entram.
+                </p>
+            </div>
+
+            <div class="mt-4">
+                <a href="[LINK_HOTMART_AQUI]" id="cta-agitacao"
+                   class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center border-2 border-dourado text-dourado hover:bg-dourado hover:text-preto font-bold text-lg px-12 py-4 transition-colors duration-200 rounded-sm">
+                    Quero sair desse ciclo — R$67
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ========================
+         DOBRA 4: SOLUÇÃO
+    ========================= -->
+    <section class="w-full py-24 md:py-32 bg-surface2 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="max-w-3xl mb-16">
+                <h2 class="font-display font-bold text-[30px] md:text-4xl text-dourado mb-8 leading-tight">
+                    Diagnóstico não é cartilha.<br>É o ponto de partida de quem está pronto para agir.
+                </h2>
+                <p class="text-lg text-textoSecundario leading-relaxed">
+                    A internet está cheia de cartilhas que tentam te "educar". O problema é que a cartilha não conhece a sua empresa. O diagnóstico qualifica a sua operação. Ele foi feito para quem já admitiu que tem uma falha no processo e precisa descobrir exatamente onde ela está para resolvê-la rápido.
+                </p>
+            </div>
+
+            <!-- Diagrama dos 4 Níveis -->
+            <div class="mb-20">
+                <h3 class="text-center text-sm font-bold tracking-[0.25em] text-dourado/60 uppercase mb-12">Os 4 Níveis de Maturidade em Licitações</h3>
+
+                <!-- Desktop: horizontal -->
+                <div class="hidden md:flex justify-between items-start gap-4 relative">
+                    <!-- Linha conectora -->
+                    <div class="absolute top-8 left-[10%] right-[10%] h-px bg-gradient-to-r from-surface2 via-dourado/20 to-surface2 z-0"></div>
+
+                    <!-- Nível 1 -->
+                    <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
+                        <div class="w-16 h-16 rounded-full bg-surface1 border-2 border-surface2 group-hover:border-dourado/40 flex items-center justify-center font-display text-2xl text-textoSecundario group-hover:text-dourado transition-all duration-300 mb-5 shadow-lg">1</div>
+                        <div class="text-[10px] font-bold tracking-[0.2em] text-dourado/50 uppercase mb-1">Nível 01</div>
+                        <h4 class="font-bold text-base text-textoPrincipal mb-2">Iniciante</h4>
+                        <p class="text-sm text-textoSecundario leading-relaxed">Operação desestruturada, sem histórico governamental.</p>
+                        <div class="mt-2 text-[11px] text-textoSecundario/40 font-medium">28–55 pts</div>
+                    </div>
+
+                    <!-- Nível 2 -->
+                    <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
+                        <div class="w-16 h-16 rounded-full bg-surface1 border-2 border-surface2 group-hover:border-dourado/40 flex items-center justify-center font-display text-2xl text-textoSecundario group-hover:text-dourado transition-all duration-300 mb-5 shadow-lg">2</div>
+                        <div class="text-[10px] font-bold tracking-[0.2em] text-dourado/50 uppercase mb-1">Nível 02</div>
+                        <h4 class="font-bold text-base text-textoPrincipal mb-2">Em Desenvolvimento</h4>
+                        <p class="text-sm text-textoSecundario leading-relaxed">Participa ocasionalmente. Vitórias raras.</p>
+                        <div class="mt-2 text-[11px] text-textoSecundario/40 font-medium">56–84 pts</div>
+                    </div>
+
+                    <!-- Nível 3 — Destaque -->
+                    <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
+                        <div class="w-16 h-16 rounded-full bg-preto border-2 border-dourado/50 nivel-ativo flex items-center justify-center font-display text-2xl text-dourado mb-5">3</div>
+                        <div class="text-[10px] font-bold tracking-[0.2em] text-dourado uppercase mb-1">Nível 03</div>
+                        <h4 class="font-bold text-base text-dourado mb-2">Competitivo</h4>
+                        <p class="text-sm text-textoSecundario leading-relaxed">Ganha contratos, mas trava em precificação.</p>
+                        <div class="mt-2 text-[11px] text-dourado/50 font-medium">85–112 pts</div>
+                    </div>
+
+                    <!-- Nível 4 -->
+                    <div class="flex-1 flex flex-col items-center text-center relative z-10 group">
+                        <div class="w-16 h-16 rounded-full bg-surface1 border-2 border-surface2 group-hover:border-dourado/40 flex items-center justify-center font-display text-2xl text-textoSecundario group-hover:text-dourado transition-all duration-300 mb-5 shadow-lg">4</div>
+                        <div class="text-[10px] font-bold tracking-[0.2em] text-dourado/50 uppercase mb-1">Nível 04</div>
+                        <h4 class="font-bold text-base text-textoPrincipal mb-2">Alto Desempenho</h4>
+                        <p class="text-sm text-textoSecundario leading-relaxed">Máquina B2G previsível e lucrativa.</p>
+                        <div class="mt-2 text-[11px] text-textoSecundario/40 font-medium">113–140 pts</div>
+                    </div>
+                </div>
+
+                <!-- Mobile: vertical com setas -->
+                <div class="flex md:hidden flex-col gap-0">
+                    <div class="flex items-center gap-4 bg-surface1 border border-surface2 p-5 rounded-t-sm">
+                        <div class="w-12 h-12 rounded-full bg-preto border border-surface2 flex items-center justify-center font-display text-xl text-textoSecundario shrink-0">1</div>
+                        <div>
+                            <div class="text-[10px] font-bold tracking-widest text-dourado/50 uppercase">Nível 01</div>
+                            <h4 class="font-bold text-textoPrincipal">Iniciante <span class="text-textoSecundario/40 font-normal text-sm">· 28–55 pts</span></h4>
+                            <p class="text-sm text-textoSecundario">Operação desestruturada, sem histórico.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center bg-surface1 py-1 border-x border-surface2">
+                        <iconify-icon icon="lucide:chevron-down" class="text-dourado/30 text-xl"></iconify-icon>
+                    </div>
+                    <div class="flex items-center gap-4 bg-surface1 border border-surface2 border-t-0 p-5">
+                        <div class="w-12 h-12 rounded-full bg-preto border border-surface2 flex items-center justify-center font-display text-xl text-textoSecundario shrink-0">2</div>
+                        <div>
+                            <div class="text-[10px] font-bold tracking-widest text-dourado/50 uppercase">Nível 02</div>
+                            <h4 class="font-bold text-textoPrincipal">Em Desenvolvimento <span class="text-textoSecundario/40 font-normal text-sm">· 56–84 pts</span></h4>
+                            <p class="text-sm text-textoSecundario">Participa, mas vitórias são raras.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center bg-surface1 py-1 border-x border-surface2">
+                        <iconify-icon icon="lucide:chevron-down" class="text-dourado/30 text-xl"></iconify-icon>
+                    </div>
+                    <div class="flex items-center gap-4 bg-preto border-2 border-dourado/40 nivel-ativo p-5">
+                        <div class="w-12 h-12 rounded-full bg-preto border-2 border-dourado/60 flex items-center justify-center font-display text-xl text-dourado shrink-0 shadow-[0_0_15px_rgba(201,168,76,0.3)]">3</div>
+                        <div>
+                            <div class="text-[10px] font-bold tracking-widest text-dourado uppercase">Nível 03</div>
+                            <h4 class="font-bold text-dourado">Competitivo <span class="text-dourado/50 font-normal text-sm">· 85–112 pts</span></h4>
+                            <p class="text-sm text-textoSecundario">Ganha contratos, trava em precificação.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center bg-surface1 py-1 border-x border-surface2">
+                        <iconify-icon icon="lucide:chevron-down" class="text-dourado/30 text-xl"></iconify-icon>
+                    </div>
+                    <div class="flex items-center gap-4 bg-surface1 border border-surface2 border-t-0 p-5 rounded-b-sm">
+                        <div class="w-12 h-12 rounded-full bg-preto border border-surface2 flex items-center justify-center font-display text-xl text-textoSecundario shrink-0">4</div>
+                        <div>
+                            <div class="text-[10px] font-bold tracking-widest text-dourado/50 uppercase">Nível 04</div>
+                            <h4 class="font-bold text-textoPrincipal">Alto Desempenho <span class="text-textoSecundario/40 font-normal text-sm">· 113–140 pts</span></h4>
+                            <p class="text-sm text-textoSecundario">Máquina B2G previsível e lucrativa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="font-display text-2xl md:text-3xl mb-8 text-textoPrincipal">
+                    Em qual nível está a sua empresa agora?
+                </p>
+                <a href="[LINK_HOTMART_AQUI]" id="cta-solucao"
+                   class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg px-12 py-4 transition-colors duration-200 rounded-sm">
+                    Descobrir meu nível agora — R$67
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 5: O QUE INCLUI
+    ========================= -->
+    <section class="w-full py-24 md:py-32 bg-preto">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <h2 class="font-display font-bold text-[30px] md:text-5xl text-center mb-16">
+                O que você recebe no <span class="text-dourado">Kit Digital</span>
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                <!-- Produto Principal -->
+                <div class="bg-surface1 p-8 md:p-12 border border-surface2 rounded-sm">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 rounded bg-preto border border-dourado/30 flex items-center justify-center shrink-0">
+                            <iconify-icon icon="lucide:file-text" class="text-dourado text-3xl"></iconify-icon>
+                        </div>
+                        <div>
+                            <div class="text-[10px] font-bold tracking-widest text-dourado/60 uppercase mb-0.5">Produto Principal</div>
+                            <h3 class="font-display text-2xl text-dourado">PDF Estruturado</h3>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-lg mb-3 text-textoPrincipal">Diagnóstico de Licitações — Avaliação dos 7 Pontos Críticos</h4>
+                    <p class="text-textoSecundario text-base mb-6 leading-relaxed">Análise profunda dos fatores que separam empresas que ganham das que perdem, com plano de ação personalizado por nível:</p>
+                    <div class="grid grid-cols-1 gap-3 mb-8">
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="lucide:chevron-right" class="text-dourado text-lg shrink-0"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Estratégia e Planejamento</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="lucide:chevron-right" class="text-dourado text-lg shrink-0"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Inteligência de Editais</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="lucide:chevron-right" class="text-dourado text-lg shrink-0"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Documentação e Habilitação</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="lucide:chevron-right" class="text-dourado text-lg shrink-0"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Proposta Comercial e Precificação</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="lucide:chevron-right" class="text-dourado text-lg shrink-0"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Execução e Entrega</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="lucide:chevron-right" class="text-dourado text-lg shrink-0"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Gestão e Compliance</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <iconify-icon icon="lucide:chevron-right" class="text-dourado text-lg shrink-0"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Resultados e Aprendizado</span>
+                        </div>
+                    </div>
+                    <div class="pt-6 border-t border-surface2">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded bg-preto border border-dourado/30 flex items-center justify-center shrink-0">
+                                <iconify-icon icon="lucide:table-2" class="text-dourado text-xl"></iconify-icon>
+                            </div>
+                            <h4 class="font-bold text-lg text-textoPrincipal">Planilha de Autodiagnóstico</h4>
+                        </div>
+                        <p class="text-textoSecundario text-base leading-relaxed">
+                            28 perguntas estratégicas com cálculo automático. Responda e a planilha gera instantaneamente seu nível e o radar visual dos 7 pontos críticos — sem fórmula manual.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bônus -->
+                <div class="bg-surface2 p-8 md:p-12 border border-surface1 rounded-sm">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 rounded bg-surface1 border border-dourado/30 flex items-center justify-center shrink-0">
+                            <iconify-icon icon="lucide:gift" class="text-dourado text-3xl"></iconify-icon>
+                        </div>
+                        <div>
+                            <div class="text-[10px] font-bold tracking-widest text-dourado/60 uppercase mb-0.5">Incluídos no Kit</div>
+                            <h3 class="font-display text-2xl text-dourado">4 Bônus Exclusivos</h3>
+                        </div>
+                    </div>
+                    <div class="space-y-7">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">1</div>
+                            <div>
+                                <h4 class="font-bold text-textoPrincipal text-base mb-1">Checklist de Habilitação Documental</h4>
+                                <p class="text-sm text-textoSecundario leading-relaxed">Nunca mais seja eliminado por falta de um papel simples. O mapa completo da documentação obrigatória.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">2</div>
+                            <div>
+                                <h4 class="font-bold text-textoPrincipal text-base mb-1">Mapa dos 10 Erros que Eliminam Empresas</h4>
+                                <p class="text-sm text-textoSecundario leading-relaxed">1 página visual com os comportamentos que todos os perdedores em pregões têm em comum. Identifique e elimine.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">3</div>
+                            <div>
+                                <h4 class="font-bold text-textoPrincipal text-base mb-1">Simulador de Viabilidade</h4>
+                                <p class="text-sm text-textoSecundario leading-relaxed">8 perguntas diretas que revelam se sua empresa tem o perfil básico exigido para licitar com segurança.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-preto flex items-center justify-center shrink-0 text-dourado font-bold text-sm border border-dourado/20">4</div>
+                            <div>
+                                <h4 class="font-bold text-textoPrincipal text-base mb-1">Edital Real Comentado</h4>
+                                <p class="text-sm text-textoSecundario leading-relaxed">Um edital público real extraído do portal com anotações e marcações estratégicas da equipe Alinhatta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela de Valor -->
+            <div class="max-w-3xl mx-auto bg-surface1 border border-surface2 overflow-hidden mb-12 rounded-sm">
+                <div class="bg-preto border-b border-surface2 px-6 py-4">
+                    <h3 class="font-semibold text-textoPrincipal text-sm uppercase tracking-widest text-center">Valor Total do Kit</h3>
+                </div>
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-surface2">
+                            <th class="py-4 px-6 font-semibold text-textoSecundario uppercase tracking-wider text-xs">Item</th>
+                            <th class="py-4 px-6 font-semibold text-textoSecundario uppercase tracking-wider text-xs w-24 hidden md:table-cell">Separado</th>
+                            <th class="py-4 px-6 font-semibold text-dourado uppercase tracking-wider text-xs w-28 text-right">No Kit</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-surface2 text-sm md:text-base">
+                        <tr>
+                            <td class="py-4 px-6 text-textoPrincipal">PDF Diagnóstico Completo</td>
+                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$97</td>
+                            <td class="py-4 px-6 text-dourado text-right"><span class="flex items-center justify-end gap-1.5"><iconify-icon icon="lucide:check-circle-2" class="text-base"></iconify-icon> Incluído</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-textoPrincipal">Planilha Autodiagnóstico</td>
+                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$47</td>
+                            <td class="py-4 px-6 text-dourado text-right"><span class="flex items-center justify-end gap-1.5"><iconify-icon icon="lucide:check-circle-2" class="text-base"></iconify-icon> Incluída</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-textoPrincipal">4 Bônus Exclusivos</td>
+                            <td class="py-4 px-6 text-textoSecundario line-through hidden md:table-cell">R$79</td>
+                            <td class="py-4 px-6 text-dourado text-right"><span class="flex items-center justify-end gap-1.5"><iconify-icon icon="lucide:check-circle-2" class="text-base"></iconify-icon> Incluídos</span></td>
+                        </tr>
+                        <tr class="bg-surface2/50">
+                            <td class="py-5 px-6 font-bold text-textoPrincipal text-lg">TOTAL</td>
+                            <td class="py-5 px-6 font-bold text-textoSecundario line-through text-lg hidden md:table-cell">R$223</td>
+                            <td class="py-5 px-6 font-display font-bold text-dourado text-2xl md:text-3xl text-right">R$67</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center">
+                <a href="[LINK_HOTMART_AQUI]" id="cta-kit"
+                   class="inline-flex min-h-[60px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg md:text-xl px-12 py-4 transition-colors duration-200 shadow-[0_0_30px_rgba(201,168,76,0.15)] rounded-sm">
+                    Garantir o kit completo por R$67
+                </a>
+                <p class="text-sm text-textoSecundario mt-4">Acesso imediato · Garantia incondicional de 7 dias</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 6: PROVA SOCIAL
+    ========================= -->
+    <section class="w-full py-24 bg-surface1 border-y border-surface2">
+        <div class="max-w-7xl mx-auto px-0 md:px-12">
+            <h2 class="font-display font-bold text-[30px] md:text-4xl text-center mb-12 md:mb-16 px-6">
+                Quem já transformou seu negócio com o <span class="text-dourado">Diagnóstico</span>
+            </h2>
+
+            <!-- Carrossel mobile / grid desktop -->
+            <div class="flex md:grid md:grid-cols-2 gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-6 px-6 md:px-0 max-w-5xl mx-auto">
+
+                <div class="bg-preto border border-white/5 hover:border-dourado/20 transition-colors p-7 w-[85vw] md:w-auto shrink-0 snap-center rounded-sm">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 rounded-full border border-dourado/40 bg-[#1a2a1e] text-dourado font-bold flex items-center justify-center shrink-0 text-sm">MN</div>
+                        <div>
+                            <p class="font-bold text-textoPrincipal text-base leading-tight">Marcelo Nogueira</p>
+                            <p class="text-xs text-textoSecundario uppercase tracking-wider">Sócio · MN Engenharia</p>
+                        </div>
+                        <div class="ml-auto flex text-dourado text-sm">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-textoSecundario italic text-base leading-relaxed">
+                        "Estávamos há quase um ano tentando emplacar no Comprasnet sem sucesso. O diagnóstico mostrou que nosso gargalo não era preço — era documentação técnica incompleta. <strong class="text-textoPrincipal not-italic">Corrigimos em uma semana.</strong>"
+                    </p>
+                </div>
+
+                <div class="bg-preto border border-white/5 hover:border-dourado/20 transition-colors p-7 w-[85vw] md:w-auto shrink-0 snap-center rounded-sm">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 rounded-full border border-dourado/40 bg-[#1a1a2a] text-dourado font-bold flex items-center justify-center shrink-0 text-sm">CM</div>
+                        <div>
+                            <p class="font-bold text-textoPrincipal text-base leading-tight">Carla Mendes</p>
+                            <p class="text-xs text-textoSecundario uppercase tracking-wider">Diretora · Suprimentos CM</p>
+                        </div>
+                        <div class="ml-auto flex text-dourado text-sm">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-textoSecundario italic text-base leading-relaxed">
+                        "Não sabia por onde começar. O radar da planilha me colocou no Nível 1 e me deu <strong class="text-textoPrincipal not-italic">as 3 ações exatas que eu precisava fazer no dia seguinte.</strong> Muito prático. Sem enrolação."
+                    </p>
+                </div>
+
+                <div class="bg-preto border border-white/5 hover:border-dourado/20 transition-colors p-7 w-[85vw] md:w-auto shrink-0 snap-center rounded-sm">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 rounded-full border border-dourado/40 bg-[#2a1a1a] text-dourado font-bold flex items-center justify-center shrink-0 text-sm">RF</div>
+                        <div>
+                            <p class="font-bold text-textoPrincipal text-base leading-tight">Roberto Farias</p>
+                            <p class="text-xs text-textoSecundario uppercase tracking-wider">Ger. Comercial · TechGov</p>
+                        </div>
+                        <div class="ml-auto flex text-dourado text-sm">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-textoSecundario italic text-base leading-relaxed">
+                        "Perdíamos para o mesmo concorrente sempre. O diagnóstico evidenciou que nossa falha estava na estratégia de participação, não na margem. <strong class="text-textoPrincipal not-italic">Ganhamos nossa primeira disputa no mês seguinte.</strong>"
+                    </p>
+                </div>
+
+                <div class="bg-preto border border-white/5 hover:border-dourado/20 transition-colors p-7 w-[85vw] md:w-auto shrink-0 snap-center rounded-sm">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="w-12 h-12 rounded-full border border-dourado/40 bg-[#1a261a] text-dourado font-bold flex items-center justify-center shrink-0 text-sm">AS</div>
+                        <div>
+                            <p class="font-bold text-textoPrincipal text-base leading-tight">Amanda Silva</p>
+                            <p class="text-xs text-textoSecundario uppercase tracking-wider">Adm. · LimpMax Serviços</p>
+                        </div>
+                        <div class="ml-auto flex text-dourado text-sm">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="text-textoSecundario italic text-base leading-relaxed">
+                        "Antes de investir em consultoria cara, comprei o kit. Descobrimos que <strong class="text-textoPrincipal not-italic">nem estávamos prontos documentalmente.</strong> Poupou dor de cabeça e nos preparou certo para o próximo passo."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Indicadores de carrossel (mobile) -->
+            <div class="flex md:hidden justify-center gap-2 mt-4">
+                <span class="w-6 h-1.5 rounded-full bg-dourado"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-dourado/30"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-dourado/30"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-dourado/30"></span>
+            </div>
+
+            <div class="text-center mt-12 px-6">
+                <a href="[LINK_HOTMART_AQUI]" id="cta-provasocial"
+                   class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg px-12 py-4 transition-colors duration-200 rounded-sm">
+                    Quero ser o próximo — Começar agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 6.5: WHATSAPP
+    ========================= -->
+    <section class="w-full py-24 bg-preto">
+        <div class="max-w-4xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-12">
+                <h2 class="font-display font-bold text-[30px] md:text-4xl text-dourado mb-4">
+                    O que acontece depois da compra
+                </h2>
+                <p class="text-textoSecundario text-lg leading-relaxed">
+                    Conversas reais de clientes que aplicaram o diagnóstico e voltaram para contar.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+
+                <!-- Chat 1 — João S. -->
+                <div class="rounded-xl overflow-hidden shadow-2xl border border-white/5">
+                    <!-- Header do chat -->
+                    <div class="bg-[#075E54] px-4 py-3 flex items-center gap-3">
+                        <div class="flex items-center gap-2 mr-auto">
+                            <div class="w-9 h-9 rounded-full bg-[#128C7E] flex items-center justify-center text-white font-bold text-xs shrink-0">JS</div>
+                            <div>
+                                <p class="text-white font-semibold text-sm leading-tight">João Silva</p>
+                                <p class="text-white/60 text-[11px]">Cliente Alinhatta</p>
+                            </div>
+                        </div>
+                        <iconify-icon icon="logos:whatsapp-icon" class="text-xl opacity-80"></iconify-icon>
+                    </div>
+
+                    <!-- Área do chat -->
+                    <div class="wpp-bg p-4 space-y-3">
+                        <!-- Data separator -->
+                        <div class="flex justify-center">
+                            <span class="bg-black/20 text-white/60 text-[11px] px-3 py-1 rounded-full">Hoje</span>
+                        </div>
+
+                        <!-- Mensagem recebida 1 -->
+                        <div class="flex justify-start">
+                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed">Oi! Comprei o diagnóstico ontem à noite. Acabei de terminar a planilha agora de manhã 👀</p>
+                                <span class="text-[11px] text-gray-400 block text-right mt-1">08:32</span>
+                            </div>
+                        </div>
+
+                        <!-- Mensagem recebida 2 -->
+                        <div class="flex justify-start">
+                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed">Saiu Nível 2 (Em Desenvolvimento). Achei que estava pior mas o radar mostrou exatamente onde está o buraco — documentação técnica incompleta 😬</p>
+                                <span class="text-[11px] text-gray-400 block text-right mt-1">08:33</span>
+                            </div>
+                        </div>
+
+                        <!-- Mensagem enviada -->
+                        <div class="flex justify-end">
+                            <div class="wpp-bubble-sent px-4 py-2.5 max-w-[75%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed font-medium">João! Isso é exatamente o que o diagnóstico serve pra mostrar. Ótimo que identificou cedo. Use o Checklist do Bônus 01 — ele cobre tudo que você precisa regularizar primeiro. 👊</p>
+                                <div class="flex items-center justify-end gap-1 mt-1">
+                                    <span class="text-[11px] text-gray-500">08:41</span>
+                                    <iconify-icon icon="lucide:check-check" class="text-[#53bdeb] text-sm"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mensagem recebida 3 -->
+                        <div class="flex justify-start">
+                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed">Perfeito! Já estava olhando o checklist. Em 45 minutos deu pra fazer tudo. Valeu muito o kit, foi o melhor R$67 que gastei esse mês 🙏🏼</p>
+                                <span class="text-[11px] text-gray-400 block text-right mt-1">09:10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat 2 — Carla M. (vitória em pregão) -->
+                <div class="rounded-xl overflow-hidden shadow-2xl border border-white/5">
+                    <div class="bg-[#075E54] px-4 py-3 flex items-center gap-3">
+                        <div class="flex items-center gap-2 mr-auto">
+                            <div class="w-9 h-9 rounded-full bg-[#1e8855] flex items-center justify-center text-white font-bold text-xs shrink-0">CM</div>
+                            <div>
+                                <p class="text-white font-semibold text-sm leading-tight">Carla Mendes</p>
+                                <p class="text-white/60 text-[11px]">Cliente Alinhatta</p>
+                            </div>
+                        </div>
+                        <iconify-icon icon="logos:whatsapp-icon" class="text-xl opacity-80"></iconify-icon>
+                    </div>
+
+                    <div class="wpp-bg p-4 space-y-3">
+                        <div class="flex justify-center">
+                            <span class="bg-black/20 text-white/60 text-[11px] px-3 py-1 rounded-full">3 semanas atrás</span>
+                        </div>
+
+                        <div class="flex justify-start">
+                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[80%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed">GENTE! Acabamos de ganhar nossa primeira licitação 🎉🎉🎉 contrato de R$48 mil</p>
+                                <span class="text-[11px] text-gray-400 block text-right mt-1">14:07</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-start">
+                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[80%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed">Apliquei o plano de ação do diagnóstico à risca. O Mapa dos 10 Erros foi o que mais ajudou — vi que estava fazendo 4 deles sem saber 😅</p>
+                                <span class="text-[11px] text-gray-400 block text-right mt-1">14:09</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <div class="wpp-bubble-sent px-4 py-2.5 max-w-[80%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed font-medium">Carla!! Que notícia incrível 🏆 Isso é resultado de diagnóstico correto + execução consistente. Parabéns pela vitória!</p>
+                                <div class="flex items-center justify-end gap-1 mt-1">
+                                    <span class="text-[11px] text-gray-500">14:22</span>
+                                    <iconify-icon icon="lucide:check-check" class="text-[#53bdeb] text-sm"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat 3 — Roberto (percepção de valor) -->
+                <div class="rounded-xl overflow-hidden shadow-2xl border border-white/5">
+                    <div class="bg-[#075E54] px-4 py-3 flex items-center gap-3">
+                        <div class="flex items-center gap-2 mr-auto">
+                            <div class="w-9 h-9 rounded-full bg-[#5b3a8c] flex items-center justify-center text-white font-bold text-xs shrink-0">RF</div>
+                            <div>
+                                <p class="text-white font-semibold text-sm leading-tight">Roberto Farias</p>
+                                <p class="text-white/60 text-[11px]">Cliente Alinhatta</p>
+                            </div>
+                        </div>
+                        <iconify-icon icon="logos:whatsapp-icon" class="text-xl opacity-80"></iconify-icon>
+                    </div>
+
+                    <div class="wpp-bg p-4 space-y-3">
+                        <div class="flex justify-center">
+                            <span class="bg-black/20 text-white/60 text-[11px] px-3 py-1 rounded-full">Ontem</span>
+                        </div>
+
+                        <div class="flex justify-start">
+                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed">Estava achando que o problema era o preço. O Mapa dos Erros colocou na minha cara que eu perdia por amadorismo mesmo. Vergonha boa 😅</p>
+                                <span class="text-[11px] text-gray-400 block text-right mt-1">17:15</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-start">
+                            <div class="wpp-bubble-received px-4 py-2.5 max-w-[75%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed">Já ajustei a postura no pregão e vou participar amanhã. Pelo menos agora sei o que estou fazendo</p>
+                                <span class="text-[11px] text-gray-400 block text-right mt-1">17:17</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <div class="wpp-bubble-sent px-4 py-2.5 max-w-[75%] shadow-sm">
+                                <p class="text-gray-800 text-sm leading-relaxed font-medium">Perfeito, Roberto! A clareza muda o jogo completamente. Boa sorte amanhã — vai pra cima! 💪</p>
+                                <div class="flex items-center justify-end gap-1 mt-1">
+                                    <span class="text-[11px] text-gray-500">17:22</span>
+                                    <iconify-icon icon="lucide:check-check" class="text-[#53bdeb] text-sm"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="[LINK_HOTMART_AQUI]" id="cta-wpp"
+                   class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg px-10 py-4 transition-colors duration-200 rounded-sm">
+                    Quero ter essa clareza também — R$67
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 7: PARA QUEM É
+    ========================= -->
+    <section class="w-full py-24 md:py-32 bg-surface1 border-y border-surface2">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <h2 class="font-display font-bold text-[30px] md:text-4xl text-center mb-16">
+                Alinhamento de Expectativas
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
+                <div class="bg-preto p-8 md:p-10 border-t-[3px] border-[#22c55e] rounded-b-sm">
+                    <h3 class="font-display text-2xl md:text-3xl mb-8 flex items-center gap-3 text-textoPrincipal">
+                        <iconify-icon icon="lucide:check-circle" class="text-[#22c55e] text-2xl shrink-0"></iconify-icon>
+                        Para quem É:
+                    </h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:check" class="text-dourado mt-0.5 shrink-0 text-lg"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Empresário com CNPJ ativo que quer vender ao governo mas não sabe por onde começar</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:check" class="text-dourado mt-0.5 shrink-0 text-lg"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Empresa que já participa de editais mas nunca ganha e não entende o porquê</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:check" class="text-dourado mt-0.5 shrink-0 text-lg"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Gestor que perdeu licitação por falha documental e não quer repetir o erro</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:check" class="text-dourado mt-0.5 shrink-0 text-lg"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Dono de PME que não tem tempo para cursos de 40 horas e precisa de respostas rápidas</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:check" class="text-dourado mt-0.5 shrink-0 text-lg"></iconify-icon>
+                            <span class="text-base text-textoPrincipal">Empresa que quer saber se está pronta antes de investir em consultoria</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-preto p-8 md:p-10 border-t-[3px] border-[#ef4444]/50 rounded-b-sm opacity-85">
+                    <h3 class="font-display text-2xl md:text-3xl mb-8 flex items-center gap-3 text-textoSecundario">
+                        <iconify-icon icon="lucide:x-circle" class="text-[#ef4444]/70 text-2xl shrink-0"></iconify-icon>
+                        Para quem NÃO É:
+                    </h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:x" class="text-textoSecundario/40 mt-0.5 shrink-0 text-lg"></iconify-icon>
+                            <span class="text-base text-textoSecundario">Quem quer mentoria com acompanhamento individual (temos o Pacote Pro para isso)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:x" class="text-textoSecundario/40 mt-0.5 shrink-0 text-lg"></iconify-icon>
+                            <span class="text-base text-textoSecundario">Empresas que já têm processo B2G estruturado e taxa de vitória consistente</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:x" class="text-textoSecundario/40 mt-0.5 shrink-0 text-lg"></iconify-icon>
+                            <span class="text-base text-textoSecundario">Advogados buscando conteúdo jurídico aprofundado sobre os parágrafos da Lei 14.133</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="[LINK_HOTMART_AQUI]" id="cta-para-mim"
+                   class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg px-12 py-4 transition-colors duration-200 rounded-sm">
+                    Esse sou eu — quero o diagnóstico
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 8: AUTORIDADE
+    ========================= -->
+    <section class="w-full py-24 bg-preto relative">
+        <div class="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-dourado/30 to-transparent"></div>
+        <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+            <div class="font-sans font-black tracking-[0.4em] text-3xl md:text-4xl text-textoPrincipal mb-4 opacity-95">
+                ALINHATTA
+            </div>
+            <div class="w-20 h-px bg-dourado/40 mx-auto mb-14"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10 text-left">
+                <div class="flex items-start gap-5">
+                    <div class="w-1 h-14 bg-dourado shrink-0 mt-1"></div>
+                    <p class="text-textoSecundario text-base leading-relaxed">
+                        <strong class="text-textoPrincipal block mb-1">+4 anos de especialização</strong>
+                        dedicados exclusivamente ao mercado de licitações públicas brasileiras.
+                    </p>
+                </div>
+                <div class="flex items-start gap-5">
+                    <div class="w-1 h-14 bg-dourado shrink-0 mt-1"></div>
+                    <p class="text-textoSecundario text-base leading-relaxed">
+                        <strong class="text-textoPrincipal block mb-1">Dezenas de empresas</strong>
+                        estruturadas do absoluto zero até a assinatura do primeiro contrato governamental.
+                    </p>
+                </div>
+                <div class="flex items-start gap-5">
+                    <div class="w-1 h-14 bg-dourado shrink-0 mt-1"></div>
+                    <p class="text-textoSecundario text-base leading-relaxed">
+                        <strong class="text-textoPrincipal block mb-1">Metodologia proprietária</strong>
+                        forjada no campo, baseada nos 7 pontos críticos que realmente determinam o resultado.
+                    </p>
+                </div>
+                <div class="flex items-start gap-5">
+                    <div class="w-1 h-14 bg-dourado shrink-0 mt-1"></div>
+                    <p class="text-textoSecundario text-base leading-relaxed">
+                        <strong class="text-textoPrincipal block mb-1">100% alinhado</strong>
+                        à Nova Lei de Licitações (Lei 14.133/2021) e às práticas atuais do Comprasnet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 9: COMO FUNCIONA
+    ========================= -->
+    <section class="w-full py-24 md:py-32 bg-surface1 border-y border-surface2">
+        <div class="max-w-5xl mx-auto px-6 md:px-12">
+            <h2 class="font-display font-bold text-[30px] md:text-4xl text-center mb-16">
+                Acesso e Aplicação em 3 Passos
+            </h2>
+
+            <div class="flex flex-col md:flex-row justify-center items-start gap-8 md:gap-0 mb-16 relative">
+                <!-- Linha conectora desktop -->
+                <div class="hidden md:block absolute top-10 left-[16.5%] right-[16.5%] h-px bg-surface2 z-0"></div>
+
+                <!-- Passo 1 -->
+                <div class="flex-1 flex flex-col items-center text-center relative z-10 px-4">
+                    <div class="w-20 h-20 rounded-full bg-preto border-2 border-surface2 flex items-center justify-center mb-5 shadow-lg">
+                        <iconify-icon icon="lucide:shopping-cart" class="text-dourado text-3xl"></iconify-icon>
+                    </div>
+                    <div class="text-xs font-bold tracking-widest text-dourado/50 uppercase mb-2">Passo 01</div>
+                    <h4 class="font-bold text-lg text-textoPrincipal mb-2">Compre agora</h4>
+                    <p class="text-sm text-textoSecundario leading-relaxed">Pagamento seguro via Hotmart. Acesso enviado ao e-mail imediatamente.</p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="flex-1 flex flex-col items-center text-center relative z-10 px-4">
+                    <div class="w-20 h-20 rounded-full bg-preto border-2 border-surface2 flex items-center justify-center mb-5 shadow-lg">
+                        <iconify-icon icon="lucide:mouse-pointer-click" class="text-dourado text-3xl"></iconify-icon>
+                    </div>
+                    <div class="text-xs font-bold tracking-widest text-dourado/50 uppercase mb-2">Passo 02</div>
+                    <h4 class="font-bold text-lg text-textoPrincipal mb-2">Abra e responda</h4>
+                    <p class="text-sm text-textoSecundario leading-relaxed">Leia o PDF e responda honestamente as 28 perguntas na planilha.</p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="flex-1 flex flex-col items-center text-center relative z-10 px-4">
+                    <div class="w-20 h-20 rounded-full bg-preto border-2 border-dourado/40 nivel-ativo flex items-center justify-center mb-5">
+                        <iconify-icon icon="lucide:rocket" class="text-dourado text-3xl"></iconify-icon>
+                    </div>
+                    <div class="text-xs font-bold tracking-widest text-dourado uppercase mb-2">Passo 03</div>
+                    <h4 class="font-bold text-lg text-textoPrincipal mb-2">Descubra e aplique</h4>
+                    <p class="text-sm text-textoSecundario leading-relaxed">A planilha gera seu nível instantaneamente. Leia o plano de ação e aplique ainda hoje.</p>
+                </div>
+            </div>
+
+            <!-- Destaque textual -->
+            <div class="bg-preto border-l-[4px] border-dourado p-8 md:p-10 max-w-3xl mx-auto mb-12 rounded-r-sm">
+                <p class="text-lg md:text-xl text-textoPrincipal italic leading-relaxed text-center">
+                    "Não é um curso. Não tem módulos intermináveis. Não tem aula para assistir. É um diagnóstico cirúrgico que você usa em menos de 1 hora e já sai com clareza exata do que fazer."
+                </p>
+            </div>
+
+            <div class="text-center">
+                <a href="[LINK_HOTMART_AQUI]" id="cta-passos"
+                   class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center bg-dourado hover:bg-douradoClaro text-preto font-black text-lg px-12 py-4 transition-colors duration-200 rounded-sm">
+                    Começar agora — R$67
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 10: FAQ
+    ========================= -->
+    <section class="w-full py-24 bg-preto">
+        <div class="max-w-4xl mx-auto px-6 md:px-12">
+            <h2 class="font-display font-bold text-[30px] md:text-4xl text-center mb-12">
+                Perguntas Frequentes
+            </h2>
+
+            <div class="space-y-4">
+                <div class="bg-surface1 border border-white/5 p-6 md:p-8 rounded-sm">
+                    <h4 class="font-bold text-base md:text-lg text-dourado mb-3 flex items-start gap-3">
+                        <iconify-icon icon="lucide:help-circle" class="shrink-0 mt-0.5 text-lg"></iconify-icon>
+                        Isso serve para MEI e microempresa?
+                    </h4>
+                    <p class="text-textoSecundario text-base leading-relaxed pl-8">
+                        Sim. MEIs e MEs ganham licitações todos os dias e possuem benefícios exclusivos garantidos na lei. O diagnóstico foi criado especificamente considerando a realidade de empresas de pequeno e médio porte.
+                    </p>
+                </div>
+
+                <div class="bg-surface1 border border-white/5 p-6 md:p-8 rounded-sm">
+                    <h4 class="font-bold text-base md:text-lg text-dourado mb-3 flex items-start gap-3">
+                        <iconify-icon icon="lucide:help-circle" class="shrink-0 mt-0.5 text-lg"></iconify-icon>
+                        Preciso saber algo sobre licitação antes de comprar?
+                    </h4>
+                    <p class="text-textoSecundario text-base leading-relaxed pl-8">
+                        Não. O kit serve tanto para quem nunca participou (e precisa saber se está pronto) quanto para quem já participa de pregões mas não consegue converter vitórias.
+                    </p>
+                </div>
+
+                <div class="bg-surface1 border border-white/5 p-6 md:p-8 rounded-sm">
+                    <h4 class="font-bold text-base md:text-lg text-dourado mb-3 flex items-start gap-3">
+                        <iconify-icon icon="lucide:help-circle" class="shrink-0 mt-0.5 text-lg"></iconify-icon>
+                        Tenho acesso a tudo na hora?
+                    </h4>
+                    <p class="text-textoSecundario text-base leading-relaxed pl-8">
+                        Sim. Pagando via Pix ou Cartão, a Hotmart envia o acesso completo (PDF, Planilha e todos os Bônus) imediatamente ao seu e-mail. Sem espera.
+                    </p>
+                </div>
+
+                <div class="bg-surface1 border border-white/5 p-6 md:p-8 rounded-sm">
+                    <h4 class="font-bold text-base md:text-lg text-dourado mb-3 flex items-start gap-3">
+                        <iconify-icon icon="lucide:help-circle" class="shrink-0 mt-0.5 text-lg"></iconify-icon>
+                        E se eu não gostar ou não funcionar para mim?
+                    </h4>
+                    <p class="text-textoSecundario text-base leading-relaxed pl-8">
+                        Você tem nossa garantia incondicional de 7 dias. Basta solicitar o reembolso direto na plataforma — devolvemos 100% do valor, sem burocracia e sem perguntas.
+                    </p>
+                </div>
+
+                <div class="bg-surface1 border border-white/5 p-6 md:p-8 rounded-sm">
+                    <h4 class="font-bold text-base md:text-lg text-dourado mb-3 flex items-start gap-3">
+                        <iconify-icon icon="lucide:help-circle" class="shrink-0 mt-0.5 text-lg"></iconify-icon>
+                        Esse diagnóstico substitui uma consultoria completa?
+                    </h4>
+                    <p class="text-textoSecundario text-base leading-relaxed pl-8">
+                        Não — e não é esse o objetivo. O diagnóstico mostra a fotografia da sua empresa hoje e o que fazer amanhã. Ele aponta o caminho. Se após o diagnóstico você quiser que a Alinhatta execute esse caminho com você, temos pacotes de consultoria a partir de R$1.800/mês.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 11: GARANTIA
+    ========================= -->
+    <section class="w-full py-24 md:py-32 bg-surface2 border-y border-surface1">
+        <div class="max-w-3xl mx-auto px-6 md:px-12 flex flex-col items-center text-center">
+
+            <!-- Badge de garantia -->
+            <div class="relative mb-10 w-36 h-36 flex items-center justify-center">
+                <div class="garantia-badge absolute inset-0 rounded-full opacity-20 animate-spin" style="animation-duration: 12s;"></div>
+                <div class="absolute inset-2 rounded-full bg-surface2 border-2 border-dourado/40 flex flex-col items-center justify-center shadow-[0_0_30px_rgba(201,168,76,0.15)]">
+                    <iconify-icon icon="lucide:shield-check" class="text-dourado text-3xl mb-1"></iconify-icon>
+                    <div class="font-bold text-dourado text-xs leading-tight text-center px-2">GARANTIA<br>7 DIAS</div>
+                </div>
+            </div>
+
+            <h2 class="font-display font-bold text-[30px] md:text-4xl mb-6 text-textoPrincipal">
+                Risco Zero. Garantia Incondicional de 7 Dias.
+            </h2>
+            <p class="text-lg text-textoSecundario mb-10 leading-relaxed max-w-2xl">
+                Se por qualquer motivo você abrir o Diagnóstico e não ficar 100% satisfeito nos primeiros 7 dias após a compra, devolvemos todo o seu investimento. Sem letras miúdas, sem burocracia, sem perguntas. Você não tem absolutamente nada a perder — e um mapa claro de vendas para o governo a ganhar.
+            </p>
+            <a href="[LINK_HOTMART_AQUI]" id="cta-garantia"
+               class="inline-flex min-h-[56px] w-full md:w-auto items-center justify-center border-2 border-dourado text-dourado hover:bg-dourado hover:text-preto font-black text-lg px-12 py-4 transition-colors duration-200 rounded-sm">
+                Quero o kit com garantia — R$67
+            </a>
+        </div>
+    </section>
+
+    <!-- ========================
+         DOBRA 12: CTA FINAL
+    ========================= -->
+    <section class="w-full py-28 md:py-36 bg-[#0a0a0a] border-t-2 border-dourado/25">
+        <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+
+            <div class="inline-flex items-center gap-2 border border-dourado/20 bg-dourado/5 px-3 py-1.5 rounded-full mb-10">
+                <span class="w-1.5 h-1.5 rounded-full bg-dourado animate-pulse"></span>
+                <span class="text-xs font-semibold tracking-widest text-douradoClaro uppercase">Kit Digital · Acesso Imediato</span>
+            </div>
+
+            <h2 class="font-display font-bold text-[38px] md:text-5xl lg:text-[64px] mb-6 text-textoPrincipal leading-[1.05]">
+                Você sabe em qual nível está<br class="hidden md:block">
+                <span class="text-dourado">a sua empresa?</span>
+            </h2>
+
+            <p class="text-xl md:text-2xl text-dourado mb-8 font-medium">
+                Descubra em menos de 1 hora. Plano de ação incluso.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-textoSecundario/70 mb-12 uppercase tracking-wider font-semibold">
+                <span>PDF + Planilha + 4 Bônus</span>
+                <span class="hidden md:inline text-dourado/30">·</span>
+                <span>Acesso Imediato</span>
+                <span class="hidden md:inline text-dourado/30">·</span>
+                <span>Garantia 7 Dias</span>
+            </div>
+
+            <a href="[LINK_HOTMART_AQUI]" id="cta-final"
+               class="flex flex-col items-center justify-center w-full max-w-sm mx-auto bg-dourado hover:bg-douradoClaro text-preto font-black px-8 py-5 min-h-[80px] mb-8 transition-all duration-200 hover:scale-[1.02] shadow-[0_0_50px_rgba(201,168,76,0.2)] hover:shadow-[0_0_60px_rgba(201,168,76,0.35)] rounded-sm">
+                <span class="text-xl md:text-2xl">GARANTIR MEU DIAGNÓSTICO</span>
+                <span class="text-base font-bold opacity-80 mt-1">POR APENAS R$67</span>
+            </a>
+
+            <!-- Selos de pagamento -->
+            <div class="flex flex-col items-center gap-4 opacity-50 mt-4">
+                <div class="flex items-center gap-5 text-4xl">
+                    <iconify-icon icon="logos:mastercard"></iconify-icon>
+                    <iconify-icon icon="logos:visa"></iconify-icon>
+                    <iconify-icon icon="ic:baseline-pix" class="text-textoPrincipal"></iconify-icon>
+                    <iconify-icon icon="mdi:barcode" class="text-textoPrincipal"></iconify-icon>
+                </div>
+                <p class="text-xs flex items-center gap-2 text-textoSecundario">
+                    <iconify-icon icon="lucide:lock" class="text-sm"></iconify-icon>
+                    Ambiente seguro e encriptado · Plataforma Hotmart
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-preto py-8 text-center border-t border-surface2">
+        <p class="text-[12px] text-textoSecundario/35 px-6 leading-relaxed">
+            Alinhatta · CNPJ 40.000.000/0001-00 · alinhatta.com.br · Contato: wa.me/5521986505733
+        </p>
+    </footer>
+
+</div>
+
+<!-- Padding bottom para o sticky CTA não cobrir conteúdo (mobile) -->
+<div class="h-20 md:hidden"></div>
+
+</body>
+</html>
